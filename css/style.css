@@ -193,4 +193,38 @@ p {
     .deliver_consultation a:hover {
       background-color: #ff9649; }
 
+.stock {
+  margin-bottom: 4.375rem; }
+  .stock .common_block_stock {
+    background-color: #e4e4e4;
+    padding-left: 0;
+    margin-bottom: 30px; }
+    .stock .common_block_stock .left_part {
+      padding-left: 0;
+      padding-right: 0;
+      margin-right: 1.875rem; }
+      .stock .common_block_stock .left_part img {
+        display: inline-block;
+        width: 100%;
+        position: relative;
+        margin-right: 1.313rem; }
+      .stock .common_block_stock .left_part p {
+        font-family: "Lobster", cursive;
+        font-size: 2.625rem;
+        position: absolute;
+        top: 45%;
+        text-align: center;
+        margin-top: -21px;
+        width: 100%; }
+    .stock .common_block_stock .right_part p {
+      font-size: 1.25rem;
+      margin-bottom: 1.5rem; }
+    .stock .common_block_stock .right_part a {
+      text-decoration: none;
+      font-family: "Montserrat", sans-serif;
+      color: #837f7f;
+      font-size: 1.125rem; }
+      .stock .common_block_stock .right_part a:hover {
+        color: #43d283; }
+
 /*# sourceMappingURL=style.css.map */

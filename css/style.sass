@@ -2,6 +2,7 @@ $main-font: 'Montserrat', sans-serif
 $dop-font: 'Open Sans', sans-serif
 $number-font: 'Noto Sans', sans-serif
 $main-font-size: 1rem
+$dop-size: 1.25rem
 $font-color: #2b2c2c
 $first-dop-color: #43d283 //green
 $second-dop-color: #ff9649 //orange
@@ -69,7 +70,7 @@ p
 .numbers
   p
     font-family: $main-font
-    font-size: 1.25rem
+    font-size: $dop-size
     //20px
     font-weight: 500
     position: relative
@@ -118,7 +119,6 @@ p
       top: 4.5rem
       z-index: 1
 
-
 .process
   .process_txt
     padding-top: 3.75rem
@@ -154,8 +154,6 @@ p
       display: block
       width: 100%
       position: relative
-
-
 
     .programs_txt
       background-color: rgba(67, 210, 131, .7)
@@ -197,7 +195,6 @@ p
           text-align: center
           margin: 2.188rem 0.688rem 0
 
-
           &:nth-child(odd)
             margin-left: 0
           &:nth-child(even)
@@ -221,14 +218,75 @@ p
     line-height: 3.25rem
     min-width: 11.5rem
     background-color: $first-dop-color
-    margin-right: 1.25rem
-    margin-left: 1.25rem
+    margin-right: $dop-size
+    margin-left: $dop-size
     &:first-of-type
       margin-left: 0
     &:last-of-type
       margin-right: 0
     &:hover
       background-color: $second-dop-color
+
+//.orders
+//  form
+//    select
+//      -webkit-appearance: none
+//      appearance: none
+//      display: inline-block
+//      width: 100%
+//      outline: none
+//      height: 40px
+//      font-family: $main-font
+//      color: $font-color
+//      padding-left: 10px
+//      &:hover
+//
+//      //background-color: #e4e4e4
+//      //border: 0
+//      //border-color: $first-dop-color
+//      option
+//        appearance: none
+//        &:hover
+//          background-color: $first-dop-color
+
+.stock
+  margin-bottom: 4.375rem
+  .common_block_stock
+    background-color: #e4e4e4
+    padding-left: 0
+    margin-bottom: 30px
+    .left_part
+      padding-left: 0
+      padding-right: 0
+      margin-right: 1.875rem
+      img
+        display: inline-block
+        width: 100%
+        position: relative
+        margin-right: 1.313rem
+      p
+        font-family:  'Lobster', cursive
+        font-size: 2.625rem
+        position: absolute
+        top: 45%
+        text-align: center
+        margin-top: -21px
+        width: 100%
+
+
+    .right_part
+      p
+        font-size: $dop-size
+        margin-bottom: 1.5rem
+
+      a
+        text-decoration: none
+        font-family: $main-font
+        color: #837f7f
+        font-size: 1.125rem
+        &:hover
+          color: $first-dop-color
+
 
 
 
