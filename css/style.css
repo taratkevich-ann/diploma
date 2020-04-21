@@ -1,0 +1,173 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0; }
+
+a {
+  text-decoration: none; }
+
+h2 {
+  font-size: 1.875rem;
+  color: #ff9649;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 1.188rem; }
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0; }
+
+h3 {
+  font-size: 1.875rem;
+  font-family: "Open Sans", sans-serif;
+  color: #2b2c2c;
+  margin-bottom: 1.938rem;
+  text-transform: uppercase; }
+
+p {
+  font-family: "Montserrat", sans-serif;
+  color: #2b2c2c;
+  margin-bottom: 0; }
+
+.navbar {
+  padding: 0.938rem 4.25rem 0;
+  margin-bottom: 3.875rem; }
+
+.navbar-brand {
+  padding: 0;
+  margin-right: 5.125rem;
+  font-size: 3.25rem;
+  font-family: "Lobster", cursive;
+  color: #43d283 !important; }
+
+.navbar-nav .nav-link {
+  padding-left: 0.375rem;
+  padding-right: 0.375rem;
+  color: #2b2c2c;
+  text-transform: uppercase; }
+  .navbar-nav .nav-link:hover {
+    color: #ff9649; }
+  .navbar-nav .nav-link:hover:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0.125rem;
+    background-color: #ff9649;
+    position: relative;
+    top: 1.438rem; }
+
+.numbers p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  position: relative;
+  padding-top: 0.938rem; }
+  .numbers p:before {
+    content: "";
+    display: inline-block;
+    font-weight: 900;
+    font-family: Font Awesome\ 5 Free;
+    -moz-transform: rotate(100deg);
+    -webkit-transform: rotate(100deg);
+    -o-transform: rotate(100deg);
+    -ms-transform: rotate(100deg);
+    transform: rotate(100deg);
+    font-size: 2.5rem;
+    color: #43d283;
+    position: absolute;
+    top: 50%;
+    margin-top: -1.5rem;
+    margin-left: -3.75rem; }
+
+.about_us {
+  margin-bottom: 6.875rem; }
+  .about_us .org_big_bg img {
+    position: relative;
+    left: 103px;
+    z-index: 0; }
+  .about_us .food img {
+    position: absolute;
+    top: 2.25rem;
+    left: 4rem;
+    z-index: 2; }
+  .about_us .org_bg img {
+    position: absolute;
+    top: 4.5rem;
+    z-index: 1; }
+
+.process .process_txt {
+  padding-top: 3.75rem; }
+.process .process_img {
+  padding-left: 2.5rem;
+  margin-bottom: 8.188rem; }
+  .process .process_img .org_big_bg img {
+    position: relative;
+    left: 6.438rem;
+    z-index: 0; }
+  .process .process_img .food img {
+    position: absolute;
+    top: 2.25rem;
+    right: 4rem;
+    z-index: 2; }
+  .process .process_img .org_bg img {
+    position: absolute;
+    top: 4.5rem;
+    z-index: 1; }
+
+.programs {
+  margin-bottom: 6.25rem; }
+  .programs .programs_img {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 1.875rem; }
+    .programs .programs_img img {
+      display: block;
+      width: 100%;
+      position: relative; }
+    .programs .programs_img .programs_txt {
+      background-color: rgba(67, 210, 131, 0.7);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      overflow: hidden;
+      width: 100%;
+      padding: 1.313rem 0 1.125rem 1.75rem; }
+      .programs .programs_img .programs_txt:hover .programs_button {
+        display: block; }
+      .programs .programs_img .programs_txt:hover {
+        height: 100%;
+        padding-top: 2.75rem; }
+      .programs .programs_img .programs_txt h5 {
+        color: #fff;
+        font-family: "Open Sans", sans-serif;
+        font-size: 1.375rem;
+        font-weight: 600;
+        margin-bottom: 0.563rem; }
+      .programs .programs_img .programs_txt p {
+        font-weight: 500;
+        color: #fff;
+        font-size: 0.875rem;
+        max-width: 300px; }
+      .programs .programs_img .programs_txt .programs_button {
+        display: none; }
+        .programs .programs_img .programs_txt .programs_button a {
+          display: inline-block;
+          text-decoration: none;
+          color: #fff;
+          font-size: 0.875rem;
+          font-family: "Montserrat", sans-serif;
+          font-weight: 600;
+          line-height: 2.438rem;
+          min-width: 8.375rem;
+          border: 2px solid #fff;
+          text-align: center;
+          margin: 2.188rem 0.688rem 0; }
+          .programs .programs_img .programs_txt .programs_button a:nth-child(odd) {
+            margin-left: 0; }
+          .programs .programs_img .programs_txt .programs_button a:nth-child(even) {
+            margin-right: 0; }
+          .programs .programs_img .programs_txt .programs_button a:hover {
+            color: #2b2c2c;
+            background-color: #fff; }
+
+/*# sourceMappingURL=style.css.map */
