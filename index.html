@@ -20,18 +20,12 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/script.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
     <script src="bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
 </head>
 <body>
-<i class="fab fa-viber"></i>
-<i class="fab fa-telegram"></i>
-<i class="fab fa-whatsapp"></i>
-
-
-<i class="fab fa-instagram-square"></i>
-<i class="fab fa-facebook"></i>
-<i class="fab fa-facebook-square"></i>
 <header>
     <nav class="navbar navbar-expand-lg bg-light">
         <a class="navbar-brand" href="#">HealthyFood</a>
@@ -73,7 +67,7 @@
 <section class="about_us">
     <div class="container">
         <div class="row">
-            <div class="d-flex align-items-center ">
+            <div class="d-md-flex align-items-md-center">
                 <div class="col-md-7">
                     <div class="org_big_bg">
                         <img src="images/org_big_bg_07.jpg" alt="org_big_bg">
@@ -267,67 +261,13 @@
         </div>
     </div>
 </section>
-<!--<section class="orders">-->
-<!--    <h3 class="text-center">ЗАМОВЛЕННЯ</h3>-->
-<!--    <div class="container">-->
-<!--        <form action="" method="post" class="form-group">-->
-
-<!--            <div class="row">-->
-<!--                <div class="col-md-5 offset-md-1 change_select">-->
-<!--                    <div class="dropdown">-->
-<!--                        <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown">Оберіть раціон</a>-->
-<!--                        <div class="dropdown-menu">-->
-<!--                            <a href="#" class="dropdown-item">Оберіть раціон</a>-->
-<!--                            <a href="#" class="dropdown-item">Баланс</a>-->
-<!--                            <a href="#" class="dropdown-item">Експрес схуднен</a>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--&lt;!&ndash;                    <select name="choose_ration" id="choose_ration">&ndash;&gt;-->
-<!--&lt;!&ndash;                        <option value="choose_ration" disabled selected>Оберіть раціон</option>&ndash;&gt;-->
-<!--&lt;!&ndash;                        <option value="balance">Баланс</option>&ndash;&gt;-->
-<!--&lt;!&ndash;                        <option value="express_lose_weight">Експрес схудненя</option>&ndash;&gt;-->
-<!--&lt;!&ndash;                        <option value="sport_menu">Спортивне меню</option>&ndash;&gt;-->
-<!--&lt;!&ndash;                        <option value="personal_menu">Індивідуальне меню</option>&ndash;&gt;-->
-<!--&lt;!&ndash;                        <option value="put_on_weight">Набір ваги</option>&ndash;&gt;-->
-<!--&lt;!&ndash;                        <option value="diabetes">Цукровий діабет</option>&ndash;&gt;-->
-<!--&lt;!&ndash;                        <option value="lactose_free_menu">Безлактозне меню</option>&ndash;&gt;-->
-<!--&lt;!&ndash;                        <option value="smoothie_menu">Смузі меню</option>&ndash;&gt;-->
-<!--&lt;!&ndash;                    </select>&ndash;&gt;-->
-<!--                </div>-->
-<!--                <div class="col-md-3">-->
-<!--                    <select name="choose_time" id="choose_time">-->
-<!--                        <option value="choose_time" disabled selected>Оберіть час</option>-->
-<!--                        <option value="7-8">7:00-8:00</option>-->
-<!--                        <option value="8-9">8:00-9:00</option>-->
-<!--                        <option value="9-10">9:00-10:00</option>-->
-<!--                        <option value="10-11">10:00-11:00</option>-->
-<!--                        <option value="11-12">11:00-12:00</option>-->
-<!--                        <option value="12-13">12:00-13:00</option>-->
-<!--                        <option value="13-14">13:00-14:00</option>-->
-<!--                        <option value="14-15">14:00-15:00</option>-->
-<!--                        <option value="15-16">15:00-16:00</option>-->
-<!--                    </select>-->
-<!--                </div>-->
-<!--                <div  class="col-md-2">-->
-<!--                    <select name="choose_gender" id="choose_gender">-->
-<!--                        <option value="choose_gender" disabled selected>Для кого</option>-->
-<!--                        <option value="male">Для чоловіка</option>-->
-<!--                        <option value="female">Для жінки</option>-->
-<!--                    </select>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </form>-->
-
-<!--    </div>-->
-<!--</section>-->
-
 <section class="orders">
     <div class="container">
         <h3 class="text-center">ЗАМОВЛЕННЯ</h3>
         <div class="row">
             <form action="" method="post" class="col-md-10 offset-md-1">
                 <div class="row">
-                    <div class="dropdown col-md-5">
+                    <div class="dropdown col-md">
                         <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
                             Обрати раціон
                         </button>
@@ -343,22 +283,57 @@
                             <a class="dropdown-item" href="#">Смузі меню</a>
                         </div>
                     </div>
+                    <div class="dropdown col-md">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                            Обрати час
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">7:00-8:00</a>
+                            <a class="dropdown-item" href="#">8:00-9:00</a>
+                            <a class="dropdown-item" href="#">9:00-10:00</a>
+                            <a class="dropdown-item" href="#">10:00-11:00</a>
+                            <a class="dropdown-item" href="#">11:00-12:00</a>
+                            <a class="dropdown-item" href="#">12:00-13:00</a>
+                            <a class="dropdown-item" href="#">13:00-14:00</a>
+                            <a class="dropdown-item" href="#">14:00-15:00</a>
+                            <a class="dropdown-item" href="#">15:00-16:00</a>
+                        </div>
+                    </div>
+                    <div class="dropdown col-md">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                            Для кого
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Чоловік</a>
+                            <a class="dropdown-item" href="#">Жінка</a>
+                        </div>
+                    </div>
                 </div>
+                <div class="row">
+                    <div class="second_form col-md">
+                        <input type="text" name="first_and_last_name" placeholder="ПІБ">
+
+                        <input type="text" name="address" placeholder="Адреса доставки (вулиця, будинок тощо)">
+                    </div>
+                    <div class="second_form col-md">
+                        <input type="text" name="number" placeholder="Номер телефону">
+
+                        <input type="email" name="email" placeholder="Email">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="second_form col-md">
+                        <textarea name="message"
+                                  placeholder="Додаткова інформація (алергія, неулюблені та улюблені продукти тощо)"></textarea>
+                    </div>
+                </div>
+
+                <!--                </div>-->
             </form>
         </div>
     </div>
 </section>
 
-<div class="">
-    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-        Dropdown button
-    </button>
-    <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Link 1</a>
-        <a class="dropdown-item" href="#">Link 2</a>
-        <a class="dropdown-item" href="#">Link 3</a>
-    </div>
-</div>
 
 <section class="stock">
     <div class="container">
@@ -666,7 +641,7 @@
 </footer>
 <section class="down_footer">
     <div class="container">
-        <p> © 2020   |   HealthyFood   |  Website Template designed by Taratkevych Hanna</p>
+        <p> © 2020 | HealthyFood | Website Template designed by Taratkevych Hanna</p>
     </div>
 </section>
 </body>
