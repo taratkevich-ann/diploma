@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0; }
 
+/* main page */
 a {
   text-decoration: none; }
 
@@ -43,9 +44,11 @@ p {
   padding-left: 0.375rem;
   padding-right: 0.375rem;
   color: #2b2c2c;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  transition: all 500ms ease-in-out 0s; }
   .navbar-nav .nav-link:hover {
-    color: #ff9649; }
+    color: #ff9649;
+    transition: all 500ms ease-in-out 0s; }
   .navbar-nav .nav-link:hover:after {
     content: "";
     display: block;
@@ -53,7 +56,8 @@ p {
     height: 0.125rem;
     background-color: #ff9649;
     position: relative;
-    top: 1.438rem; }
+    top: 1.438rem;
+    transition: all 500ms ease-in-out 0s; }
 
 .numbers p {
   font-family: "Montserrat", sans-serif;
@@ -130,12 +134,14 @@ p {
       right: 0;
       overflow: hidden;
       width: 100%;
-      padding: 1.313rem 0 1.125rem 1.75rem; }
+      padding: 1.313rem 0 1.125rem 1.75rem;
+      transition: all 1s ease-in-out 0s; }
       .programs .programs_img .programs_txt:hover .programs_button {
         display: block; }
       .programs .programs_img .programs_txt:hover {
         height: 100%;
-        padding-top: 2.75rem; }
+        padding-top: 2.75rem;
+        transition: all 1s ease-in-out 0s; }
       .programs .programs_img .programs_txt h5 {
         color: #fff;
         font-family: "Open Sans", sans-serif;
@@ -160,14 +166,16 @@ p {
           min-width: 8.375rem;
           border: 2px solid #fff;
           text-align: center;
-          margin: 2.188rem 0.688rem 0; }
+          margin: 2.188rem 0.688rem 0;
+          transition: all 1s ease-in-out 0s; }
           .programs .programs_img .programs_txt .programs_button a:nth-child(odd) {
             margin-left: 0; }
           .programs .programs_img .programs_txt .programs_button a:nth-child(even) {
             margin-right: 0; }
           .programs .programs_img .programs_txt .programs_button a:hover {
             color: #2b2c2c;
-            background-color: #fff; }
+            background-color: #fff;
+            transition: all 1s ease-in-out 0s; }
 
 .deliver_consultation {
   background-color: #e4e4e4;
@@ -188,13 +196,15 @@ p {
     min-width: 11.5rem;
     background-color: #43d283;
     margin-right: 1.25rem;
-    margin-left: 1.25rem; }
+    margin-left: 1.25rem;
+    transition: all 500ms ease-in-out 0s; }
     .deliver_consultation a:first-of-type {
       margin-left: 0; }
     .deliver_consultation a:last-of-type {
       margin-right: 0; }
     .deliver_consultation a:hover {
-      background-color: #ff9649; }
+      background-color: #ff9649;
+      transition: all 500ms ease-in-out 0s; }
 
 .orders .dropdown {
   box-sizing: border-box;
@@ -231,9 +241,9 @@ p {
   text-align: left;
   border-radius: 0;
   border: 0;
-  padding: 0 22px !important;
-  line-height: 50px !important;
-  transition: none; }
+  padding: 0 1.375rem;
+  line-height: 3.125rem;
+  transition: all 1s ease-in-out 0s; }
 .orders .dropdown-menu.show {
   width: 100%;
   box-sizing: border-box; }
@@ -282,7 +292,21 @@ p {
       height: 14.063rem;
       padding-left: 1.25rem;
       padding-top: 1.25rem;
-      margin-bottom: 9.375rem; }
+      margin-bottom: 1.375rem; }
+.orders .orders_but button {
+  display: block;
+  min-width: 183px;
+  line-height: 3.25rem;
+  background-color: #43d283;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  border: 0;
+  margin: auto;
+  margin-bottom: 9.375rem;
+  transition: all 1s ease-in-out 0s; }
+  .orders .orders_but button:hover {
+    background-color: #ff9649;
+    transition: all 1s ease-in-out 0s; }
 
 .stock {
   margin-bottom: 4.375rem; }
@@ -314,9 +338,11 @@ p {
       text-decoration: none;
       font-family: "Montserrat", sans-serif;
       color: #837f7f;
-      font-size: 1.125rem; }
+      font-size: 1.125rem;
+      transition: all 500ms ease-in-out 0s; }
       .stock .common_block_stock .right_part a:hover {
-        color: #43d283; }
+        color: #43d283;
+        transition: all 500ms ease-in-out 0s; }
 
 .comments .owl-nav {
   display: none; }
@@ -348,7 +374,8 @@ p {
 .comments .txt_carousel .marks {
   display: inline-block; }
   .comments .txt_carousel .marks a {
-    text-decoration: none; }
+    text-decoration: none;
+    transition: all 1s ease-in-out 0s; }
     .comments .txt_carousel .marks a:before {
       content: "";
       display: inline-block;
@@ -357,7 +384,8 @@ p {
       color: #e4e4e4;
       font-size: 0.75rem; }
     .comments .txt_carousel .marks a:hover:before {
-      color: #ff9649; }
+      color: #ff9649;
+      transition: all 500ms ease-in-out 0s; }
 .comments .txt_carousel p {
   margin-bottom: 3.125rem; }
   .comments .txt_carousel p:nth-child(odd) {
@@ -394,9 +422,11 @@ footer {
         border: 0;
         text-transform: uppercase;
         color: #fff;
-        background-color: #43d283; }
+        background-color: #43d283;
+        transition: all 500ms ease-in-out 0s; }
         footer .footer_form form button:hover {
-          background-color: #ff9649; }
+          background-color: #ff9649;
+          transition: all 500ms ease-in-out 0s; }
   footer .social {
     margin-left: 1.875rem;
     padding: 0 4.063rem 1.375rem;
@@ -410,7 +440,8 @@ footer {
     footer .social .write_to_us {
       margin-bottom: 1rem; }
       footer .social .write_to_us a {
-        text-decoration: none; }
+        text-decoration: none;
+        transition: all 1s ease-in-out 0s; }
         footer .social .write_to_us a:before {
           content: "";
           display: inline-block;
@@ -428,11 +459,13 @@ footer {
         footer .social .write_to_us a:last-child {
           margin-right: 0; }
         footer .social .write_to_us a:hover:before {
-          color: #ff9649; }
+          color: #ff9649;
+          transition: all 1s ease-in-out 0s; }
     footer .social .soc {
       margin: 0; }
       footer .social .soc a {
-        text-decoration: none; }
+        text-decoration: none;
+        transition: all 1s ease-in-out 0s; }
         footer .social .soc a:before {
           content: "";
           display: inline-block;
@@ -449,7 +482,8 @@ footer {
         footer .social .soc a:last-child {
           margin-right: 0; }
         footer .social .soc a:hover:before {
-          color: #ff9649; }
+          color: #ff9649;
+          transition: all 1s ease-in-out 0s; }
   footer .contacts {
     padding-left: 3.875rem;
     padding-bottom: 1.375rem; }

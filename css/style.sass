@@ -11,9 +11,15 @@ $second-dop-color: #ff9649
 $third-dop-color: #e4e4e4
 //grey
 
+//@keyframes slideInDown{
+// 0%   left: 0; top: 0
+
 *
   padding: 0
   margin: 0
+
+
+/* main page*/
 
 a
   text-decoration: none
@@ -64,9 +70,11 @@ p
   // 6px
   color: $font-color
   text-transform: uppercase
+  transition: all 500ms ease-in-out 0s
 
   &:hover
     color: $second-dop-color
+    transition: all 500ms ease-in-out 0s
 
   &:hover:after
     content: ''
@@ -77,7 +85,7 @@ p
     background-color: $second-dop-color
     position: relative
     top: 1.438rem
-//23px
+    transition: all 500ms ease-in-out 0s
 
 .numbers
   p
@@ -120,6 +128,7 @@ p
       position: relative
       left: 6.438rem
       z-index: 0
+
 
   .food
     img
@@ -183,6 +192,7 @@ p
       overflow: hidden
       width: 100%
       padding: 1.313rem 0 1.125rem 1.75rem
+      transition: all 1s ease-in-out 0s
 
       &:hover .programs_button
         display: block
@@ -190,6 +200,7 @@ p
       &:hover
         height: 100%
         padding-top: 2.75rem
+        transition: all 1s ease-in-out 0s
 
       h5
         color: #fff
@@ -219,6 +230,7 @@ p
           border: 2px solid #fff
           text-align: center
           margin: 2.188rem 0.688rem 0
+          transition: all 1s ease-in-out 0s
 
           &:nth-child(odd)
             margin-left: 0
@@ -229,6 +241,7 @@ p
           &:hover
             color: $font-color
             background-color: #fff
+            transition: all 1s ease-in-out 0s
 
 .deliver_consultation
 
@@ -254,6 +267,7 @@ p
     background-color: $first-dop-color
     margin-right: $dop-size
     margin-left: $dop-size
+    transition: all 500ms ease-in-out 0s
 
     &:first-of-type
       margin-left: 0
@@ -263,6 +277,7 @@ p
 
     &:hover
       background-color: $second-dop-color
+      transition: all 500ms ease-in-out 0s
 
 
 .orders
@@ -308,9 +323,9 @@ p
     text-align: left
     border-radius: 0
     border: 0
-    padding: 0 22px !important
-    line-height: 50px !important
-    transition: none
+    padding: 0 1.375rem
+    line-height: 3.125rem
+    transition: all 1s ease-in-out 0s
 
   .dropdown-menu.show
     width: 100%
@@ -369,7 +384,24 @@ p
         height: 14.063rem
         padding-left: $dop-size
         padding-top: $dop-size
-        margin-bottom: 9.375rem
+        margin-bottom: 1.375rem
+  .orders_but
+    button
+      display: block
+      min-width: 183px
+      line-height: 3.25rem
+      background-color: $first-dop-color
+      color: #fff
+      font-family: $main-font
+      border: 0
+      margin: auto
+      margin-bottom: 9.375rem
+      transition: all 1s ease-in-out 0s
+      &:hover
+        background-color: $second-dop-color
+        transition: all 1s ease-in-out 0s
+
+
 
 
 .stock
@@ -400,7 +432,6 @@ p
         margin-top: -1.313rem
         width: 100%
 
-
     .right_part
       p
         font-size: $dop-size
@@ -411,9 +442,11 @@ p
         font-family: $main-font
         color: #837f7f
         font-size: 1.125rem
+        transition: all 500ms ease-in-out 0s
 
         &:hover
           color: $first-dop-color
+          transition: all 500ms ease-in-out 0s
 
 .comments
   .owl-nav
@@ -458,6 +491,7 @@ p
 
       a
         text-decoration: none
+        transition: all 1s ease-in-out 0s
 
         &:before
           content: "\f005"
@@ -469,6 +503,7 @@ p
 
         &:hover:before
           color: $second-dop-color
+          transition: all 500ms ease-in-out 0s
 
     p
       margin-bottom: 3.125rem
@@ -517,9 +552,11 @@ footer
         text-transform: uppercase
         color: #fff
         background-color: $first-dop-color
+        transition: all 500ms ease-in-out 0s
 
         &:hover
           background-color: $second-dop-color
+          transition: all 500ms ease-in-out 0s
 
   .social
     margin-left: 1.875rem
@@ -539,7 +576,7 @@ footer
 
       a
         text-decoration: none
-
+        transition: all 1s ease-in-out 0s
 
         &:before
           content: "\f409"
@@ -565,12 +602,14 @@ footer
 
         &:hover:before
           color: $second-dop-color
+          transition: all 1s ease-in-out 0s
 
     .soc
       margin: 0
 
       a
         text-decoration: none
+        transition: all 1s ease-in-out 0s
 
         &:before
           content: "\f16d"
@@ -580,10 +619,7 @@ footer
           color: $first-dop-color
           margin-left: 0.25rem
           margin-right: 0.25rem
-        //width: 35px
-        //height: 35px
-        //background-color: $second-dop-color
-        //border-radius: 20%
+
         &:nth-child(2):before
           content: "\f082"
           font-size: 2.188rem
@@ -596,6 +632,7 @@ footer
 
         &:hover:before
           color: $second-dop-color
+          transition: all 1s ease-in-out 0s
 
   .contacts
     padding-left: 3.875rem
