@@ -11,8 +11,10 @@ $second-dop-color: #ff9649
 $third-dop-color: #e4e4e4
 //grey
 
-//@keyframes slideInDown{
-// 0%   left: 0; top: 0
+@mixin max-screen($res)
+  @media screen and (max-width: $res)
+    @content
+
 
 *
   padding: 0
@@ -51,127 +53,206 @@ p
 
 .navbar
   padding: 0.938rem 4.25rem 0
-  //15px 68px
-  margin-bottom: 3.875rem
+  margin-bottom: 60px
 
-.navbar-brand
-  padding: 0
-  margin-right: 3.75rem
-  font-size: 3.25rem
-  //52px
-  font-family: 'Lobster', cursive
-  color: $first-dop-color !important
+  @include max-screen(768px)
+    margin-bottom: 4rem
+    padding: .6rem 1rem 0
+  @include max-screen(1024px)
+    padding: .6rem 0 0
 
+  .navbar-brand
+    padding: 0
+    margin-right: 3.75rem
+    font-size: 3.25rem
+    font-family: 'Lobster', cursive
+    color: $first-dop-color !important
+    @include max-screen(1024px)
+      margin-right: 2rem
+      font-size: 40px
 
-.navbar-nav .nav-link
-  padding-left: 0.375rem
-  // 6px
-  padding-right: 0.375rem
-  // 6px
-  color: $font-color
-  text-transform: uppercase
-  transition: all 500ms ease-in-out 0s
+  .navbar-toggler
 
-  &:hover
-    color: $second-dop-color
+    .navbar-toggler-icon
+      background-color: $first-dop-color
+
+  .navbar-nav .nav-link
+    padding-left: 0.375rem
+    // 6px
+    padding-right: 0.375rem
+    // 6px
+    color: $font-color
+    text-transform: uppercase
     transition: all 500ms ease-in-out 0s
+    @include max-screen(1024px)
+      padding-left: 0.2rem
+      padding-right: 0.2rem
+      font-size: 14px
 
-  &:hover:after
-    content: ''
-    display: block
-    width: 100%
-    height: 0.125rem
-    //2px
-    background-color: $second-dop-color
-    position: relative
-    top: 1.438rem
-    transition: all 500ms ease-in-out 0s
+    &:hover
+      color: $second-dop-color
+      transition: all 500ms ease-in-out 0s
 
-.numbers
-  p
-    font-family: $main-font
-    font-size: 18px
+    &:hover:after
+      content: ''
+      display: block
+      width: 100%
+      height: 0.125rem
+      //2px
+      background-color: $second-dop-color
+      position: relative
+      top: 1.438rem
+      transition: all 1s ease-in-out 0s
 
-    font-weight: 500
-    position: relative
+  .numbers
+    p
+      font-family: $main-font
+      font-size: 18px
+      font-weight: 500
+      position: relative
+      @include max-screen(1024px)
+        font-size: 14px
 
-
-    &:before
-      content: "\f095"
-      display: inline-block
-      font-weight: 900
-      font-family: Font Awesome\ 5 Free
-      -moz-transform: rotate(100deg)
-      //explorer
-      -webkit-transform: rotate(100deg)
-      //chrome/safari
-      -o-transform: rotate(100deg)
-      //opera
-      -ms-transform: rotate(100deg)
-      //firefox
-      transform: rotate(100deg)
-      font-size: 2rem
-
-      color: $first-dop-color
-      position: absolute
-      top: 50%
-      margin-top: -1.5rem
-      margin-left: -3.75rem
-
+      &:before
+        content: "\f095"
+        display: inline-block
+        font-weight: 900
+        font-family: Font Awesome\ 5 Free
+        -moz-transform: rotate(100deg)
+        //explorer
+        -webkit-transform: rotate(100deg)
+        //chrome/safari
+        -o-transform: rotate(100deg)
+        //opera
+        -ms-transform: rotate(100deg)
+        //firefox
+        transform: rotate(100deg)
+        font-size: 2rem
+        color: $first-dop-color
+        position: absolute
+        top: 50%
+        margin-top: -1.5rem
+        margin-left: -3.75rem
 
 .about_us
-  margin-bottom: 9.375rem
+  margin-bottom: 170px
+  @include max-screen(768px)
+    margin-bottom: 4rem
 
   .org_big_bg
+    @include max-screen(768px)
+      display: none
+
 
     img
+      display: block
+      width: 100%
       position: relative
-      left: 6.438rem
+      padding-left: 103px
+      padding-right: 40px
       z-index: 0
+      @include max-screen(1024px)
+        padding-right: 0
 
 
   .food
     img
+      display: inline-block
+      max-width: 500px
       position: absolute
-      top: 2.25rem
-      left: 4rem
+      left: 54px
+      top: 40px
       z-index: 2
+      @include max-screen(768px)
+        position: relative
+        top: 0
+        left: 0
+        width: 100%
+        max-width: none
+        padding: 50px 0
+        border-bottom: 2px solid $second-dop-color
+        border-top: 2px solid $second-dop-color
+      @include max-screen(1024px)
+        left: 22px
+
 
   .org_bg
+    @include max-screen(768px)
+      display: none
     img
+      display: inline-block
+      max-width: 196px
       position: absolute
-      top: 4.5rem
+      left: 0
+      top: 83px
       z-index: 1
+      @include max-screen(1024px)
+        top: 81px
 
 .process
   .process_txt
-    padding-top: 3.75rem
+    padding-top: 20px
+    @include max-screen(414px)
+      padding-top: 0
+      margin-bottom: 20px
+    @include max-screen(768px)
+      padding-top: 0
+      margin-bottom: 100px
+
+    p
+      @include max-screen(768px)
+        font-size: 15px
 
   .process_img
-    padding-left: 2.5rem
     margin-bottom: 9.375rem
+    @include max-screen(768px)
+      margin-bottom: 100px
 
     .org_big_bg
+      @include max-screen(768px)
+        display: none
+
       img
-        position: relative
-        left: 6.438rem
+        position: absolute
+        bottom: 201px
+        right: 0
         z-index: 0
 
     .food
       img
-        position: absolute
-        top: 2.25rem
-        right: 4rem
+        display: inline-block
+        width: 100%
+        position: relative
+        padding-left: 93px
+        padding-right: 54px
         z-index: 2
+        @include max-screen(414px)
+          padding-right: 0
+          padding-left: 0
+        @include max-screen(768px)
+          padding: 50px 0
+          border-bottom: 2px solid $second-dop-color
+          border-top: 2px solid $second-dop-color
+        @include max-screen(1024px)
+          padding-left: 10px
+          padding-right: 10px
 
     .org_bg
+      @include max-screen(768px)
+        display: none
       img
         position: absolute
-        top: 4.5rem
+        top: 47px
+        left: 47px
         z-index: 1
+        @include max-screen(1024px)
+          left: 0
+
 
 .programs
   margin-bottom: 9.375rem
+  @include max-screen(414px)
+    margin-bottom: 100px
 
   .programs_img
     position: relative
@@ -193,8 +274,15 @@ p
       width: 100%
       padding: 1.313rem 0 1.125rem 1.75rem
       transition: all 1s ease-in-out 0s
+      @include max-screen(768px)
+        padding: 10px 0 10px 10px
+      @include max-screen(1024px)
+        padding: 10px 0 10px 10px
 
       &:hover .programs_button
+        display: block
+
+      &:hover p
         display: block
 
       &:hover
@@ -208,12 +296,20 @@ p
         font-size: 1.375rem
         font-weight: 600
         margin-bottom: 0.563rem
+        @include max-screen(768px)
+          font-size: 1rem
 
       p
         font-weight: 500
         color: #fff
         font-size: 0.875rem
         max-width: 300px
+        @include max-screen(768px)
+          display: none
+
+        @include max-screen(1024px)
+          font-size: 0.75rem
+
 
       .programs_button
         display: none
@@ -246,8 +342,10 @@ p
 .deliver_consultation
 
   background-color: #e4e4e4
-  margin-bottom: 9.375rem
   padding: 6.25rem 0
+  margin-bottom: 9.375rem
+  @include max-screen(414px)
+    margin-bottom: 100px
 
   h3
     margin-bottom: 3.125rem
@@ -268,6 +366,11 @@ p
     margin-right: $dop-size
     margin-left: $dop-size
     transition: all 500ms ease-in-out 0s
+    @include max-screen(414px)
+      margin-left: 0
+      margin-right: 0
+      width: 100%
+      margin-bottom: 10px
 
     &:first-of-type
       margin-left: 0
@@ -291,6 +394,10 @@ p
 
     &:last-of-type
       margin-right: 0
+
+    @include max-screen(414px)
+      margin-right: 0
+      margin-left: 0
 
   .show .btn-primary.dropdown-toggle, .btn-primary
     display: inline-block
@@ -366,6 +473,10 @@ p
       &:last-of-type
         margin: 0
 
+      @include max-screen(414px)
+        margin-right: 0
+        margin-left: 0
+
       input
         display: inline-block
         width: 100%
@@ -388,7 +499,7 @@ p
   .orders_but
     button
       display: block
-      min-width: 183px
+      min-width: 11.438rem
       line-height: 3.25rem
       background-color: $first-dop-color
       color: #fff
@@ -401,7 +512,9 @@ p
         background-color: $second-dop-color
         transition: all 1s ease-in-out 0s
 
-
+      @include max-screen(414px)
+        width: 100%
+        margin-bottom: 100px
 
 
 .stock
@@ -422,20 +535,36 @@ p
         width: 100%
         position: relative
         margin-right: 1.313rem
+        @include max-screen(768px)
+          margin-right: 0
 
       p
         font-family: 'Lobster', cursive
-        font-size: 2.625rem
+        font-size: 2.5rem
         position: absolute
         top: 45%
         text-align: center
         margin-top: -1.313rem
         width: 100%
+        @include max-screen(414px)
+          font-size: $dop-size
+          top: 50%
+        @include max-screen(768px)
+          font-size: 25px
+          top: 50%
+        @include max-screen(1024px)
+          font-size: 32px
 
     .right_part
       p
         font-size: $dop-size
         margin-bottom: 1.5rem
+        @include max-screen(414px)
+          font-size: 0.75rem
+          margin-bottom: 0
+        @include max-screen(768px)
+          margin-bottom: 0
+          font-size: 1rem
 
       a
         text-decoration: none
@@ -443,6 +572,8 @@ p
         color: #837f7f
         font-size: 1.125rem
         transition: all 500ms ease-in-out 0s
+        @include max-screen(414px)
+          font-size: 0.75rem
 
         &:hover
           color: $first-dop-color
@@ -456,6 +587,8 @@ p
     width: 100%
     margin-bottom: 9.375rem
     text-align: center
+    @include max-screen(414px)
+      margin-bottom: 100px
 
     .owl-dot
       outline: none
@@ -485,6 +618,8 @@ p
       font-size: 1.125rem
       display: inline-block
       margin-bottom: 0.75rem
+      @include max-screen(768px)
+        font-size: 1.1rem
 
     .marks
       display: inline-block
@@ -500,6 +635,8 @@ p
           font-weight: 900
           color: $third-dop-color
           font-size: 0.75rem
+          @include max-screen(768px)
+            font-size: 0.6rem
 
         &:hover:before
           color: $second-dop-color
@@ -519,7 +656,6 @@ footer
 
   h4
     font-size: $dop-size
-
     font-family: $dop-font
     color: $font-color
 
@@ -527,13 +663,29 @@ footer
     padding-left: 5.625rem
     margin-right: 1.875rem
     padding-bottom: 1.375rem
+    @include max-screen(414px)
+      display: block
+      margin: auto
+      padding-left: 0
+      margin-right: 0
+      padding-bottom: 38px
+      border-bottom: 2px solid $first-dop-color
+
+    @include max-screen(768px)
+      padding-left: 0
+      padding-right: 0
+      margin: auto
+      margin-bottom: 25px
+
+    @include max-screen(1024px)
+      padding-left: 0
+      padding-right: 0
 
     h4
       padding-top: 1.375rem
       margin-bottom: 1.125rem
 
     p
-
       margin-bottom: 1.313rem
 
     form
@@ -563,13 +715,27 @@ footer
     padding: 0 4.063rem 1.375rem
     border-right: 2px solid $first-dop-color
     border-left: 2px solid $first-dop-color
+    @include max-screen(414px)
+      padding: 0 0 38px
+      border-left: 0
+      border-right: 0
+      border-bottom: 2px solid $first-dop-color
+      margin-left: 0
+
+    @include max-screen(768px)
+      padding: 0
+      padding-bottom: 38px
+
+      width: 50%
+      margin-left: 0
+      border-left: 0
 
     h4
       padding-top: 0
       margin-bottom: 0.313rem
 
       &:first-of-type
-        padding-top: 1.375rem
+        padding-top: 23px
 
     .write_to_us
       margin-bottom: 1rem
@@ -584,7 +750,7 @@ footer
           font-family: Font Awesome\ 5 Brands
           font-size: 2.188rem
           color: $first-dop-color
-          margin: 0 0.25rem
+          margin: 0 .25rem
 
 
         &:nth-child(2):before
@@ -637,6 +803,10 @@ footer
   .contacts
     padding-left: 3.875rem
     padding-bottom: 1.375rem
+    @include max-screen(414px)
+      padding-bottom: 0
+      margin-bottom: 38px
+      padding-left: 0
 
     h4
       padding-top: 1.375rem
