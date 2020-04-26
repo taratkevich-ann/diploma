@@ -35,6 +35,19 @@ $third-dop-color: #e4e4e4
   font-weight: 600
   margin-bottom: $dop-size
 
+%program_name
+  font-family: $dop-font
+  font-size: $dop-size
+  margin-bottom: 10px
+
+%h5_for_program_page
+  font-family: $main-font
+  font-size: 45px
+  margin-right: 10px
+  font-weight: 600
+  color: $first-dop-color
+
+
 @keyframes pulse
   0%
     -webkit-transform: scale3d(1, 1, 1)
@@ -449,59 +462,62 @@ p
       margin-right: 0
       margin-left: 0
 
-  .show .btn-primary.dropdown-toggle, .btn-primary
-    display: inline-block
-    width: 100%
-    background-color: $third-dop-color
-    color: $font-color
-    font-family: $main-font
-    border: 0
-    outline: 0
-    text-align: left
-
-  .dropdown-toggle
-    position: relative
-
-    &:after
-      content: "\f107"
+    .show .btn-primary.dropdown-toggle, .btn-primary
       display: inline-block
-      font-family: Font Awesome\ 5 Free
-      font-weight: 900
-      margin-left: 0
-      vertical-align: 0
+      width: 100%
+      background-color: $third-dop-color
+      color: $font-color
+      font-family: $main-font
       border: 0
-      position: absolute
-      right: $dop-size
+      outline: 0
+      text-align: left
 
-  .btn
+    .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle
+      border: 0!important
+      background-color: $first-dop-color!important
 
-    display: inline-block
-    width: 100%
-    text-align: left
-    border-radius: 0
-    border: 0
-    padding: 0 1.375rem
-    line-height: 3.125rem
-    transition: all 1s ease-in-out 0s
+    .dropdown-toggle
+      position: relative
 
-  .dropdown-menu.show
-    width: 100%
-    box-sizing: border-box
+      &:after
+        content: "\f107"
+        display: inline-block
+        font-family: Font Awesome\ 5 Free
+        font-weight: 900
+        margin-left: 0
+        vertical-align: 0
+        border: 0
+        position: absolute
+        right: $dop-size
 
-  .dropdown-menu
-    margin: 0
-    border-radius: 0
-    padding: 0
-    color: $font-color
-    font-family: $main-font
-    box-sizing: border-box
+    .btn
+      display: inline-block
+      width: 100%
+      text-align: left
+      border-radius: 0
+      border: 0
+      padding: 0 1.375rem
+      line-height: 3.125rem
+      transition: all 1s ease-in-out 0s
 
-  .dropdown-item
-    display: inline-block
-    width: 100%
-    box-sizing: border-box
-    color: $font-color
-    font-family: $main-font
+    .dropdown-menu.show
+      width: 100%
+      box-sizing: border-box
+
+    .dropdown-menu
+      margin: 0
+      border-radius: 0
+      padding: 0
+      color: $font-color
+      font-family: $main-font
+      box-sizing: border-box
+
+    .dropdown-item
+      display: inline-block
+      width: 100%
+      box-sizing: border-box
+      color: $font-color
+      font-family: $main-font
 
   form
     font-family: $main-font
@@ -928,6 +944,7 @@ footer
 
   h4
     @extend %h4_for_stocks
+
     &:last-of-type
       color: $second-dop-color
       margin-bottom: 30px
@@ -939,6 +956,7 @@ footer
     color: $second-dop-color
     padding-left: 35px
     margin-bottom: 50px
+
     li
       span
         color: $font-color
@@ -949,8 +967,10 @@ footer
 
   p
     margin-bottom: $dop-size
+
     &:first-of-type
       margin-bottom: 0
+
     &:nth-child(3)
       margin-bottom: 50px
 
@@ -967,6 +987,7 @@ footer
 
   h4
     @extend %h4_for_stocks
+
     &:last-of-type
       color: $second-dop-color
       margin-bottom: 30px
@@ -978,6 +999,7 @@ footer
     color: $second-dop-color
     padding-left: 35px
     margin-bottom: 50px
+
     li
       span
         color: $font-color
@@ -992,6 +1014,7 @@ footer
 
   .attention
     margin-bottom: 9.375rem
+
     span
       font-family: $main-font
       color: $font-color
@@ -1009,6 +1032,7 @@ footer
 
   h4
     @extend %h4_for_stocks
+
     &:last-of-type
       color: $second-dop-color
       margin-bottom: 30px
@@ -1020,6 +1044,7 @@ footer
     color: $second-dop-color
     padding-left: 35px
     margin-bottom: 50px
+
     li
       span
         color: $font-color
@@ -1034,6 +1059,97 @@ footer
   .attention
     p
       margin-bottom: 9.375rem
+
+/*programs*/
+.program_description
+  img
+    display: inline-block
+    width: 100%
+
+  .price
+    .program_name
+      @extend %program_name
+
+      span
+        &:first-of-type
+          font-weight: 600
+
+    .main_cost_block
+      .cost
+        .value
+          padding-bottom: 10px
+          border-bottom: 2px solid $first-dop-color
+          margin-bottom: 10px
+          h5
+            @extend %h5_for_program_page
+          p
+            &:nth-child(odd)
+              color: $first-dop-color
+              font-weight: 600
+
+        span
+          display: block
+          font-size: 14px
+          max-width: 140px
+          margin-bottom: 10px
+
+    .dropdown
+      box-sizing: border-box
+      padding: 0
+      margin: 0 0.625rem 1.375rem
+
+
+      .show .btn-primary.dropdown-toggle, .btn-primary
+        background-color: $third-dop-color
+        color: $font-color
+        font-family: $main-font
+        border: 0
+        outline: 0
+        text-align: left
+
+      .dropdown-toggle
+        position: relative
+
+        &:after
+          content: "\f107"
+          display: inline-block
+          font-family: Font Awesome\ 5 Free
+          font-weight: 900
+          margin-left: 0
+          vertical-align: 0
+          border: 0
+          position: absolute
+          right: $dop-size
+
+      .btn
+        text-align: left
+        border-radius: 0
+        border: 0
+        padding: 0 1.375rem
+        line-height: 3.125rem
+        transition: all 1s ease-in-out 0s
+
+      .dropdown-menu.show
+        width: 100%
+        box-sizing: border-box
+
+      .dropdown-menu
+        margin: 0
+        border-radius: 0
+        padding: 0
+        color: $font-color
+        font-family: $main-font
+        box-sizing: border-box
+
+      .dropdown-item
+        display: inline-block
+        width: 100%
+        box-sizing: border-box
+        color: $font-color
+        font-family: $main-font
+
+
+
 
 
 
