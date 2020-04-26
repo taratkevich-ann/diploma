@@ -16,6 +16,21 @@ $third-dop-color: #e4e4e4
     @content
 
 
+@keyframes pulse
+  0%
+    -webkit-transform: scale3d(1, 1, 1)
+    transform: scale3d(1, 1, 1)
+
+  50%
+    -webkit-transform: scale3d(1.05, 1.05, 1.05)
+    transform: scale3d(1.05, 1.05, 1.05)
+
+  100%
+    -webkit-transform: scale3d(1, 1, 1)
+    transform: scale3d(1, 1, 1)
+
+
+
 *
   padding: 0
   margin: 0
@@ -51,15 +66,17 @@ p
   color: $font-color
   margin-bottom: 0
 
+
 .navbar
-  padding: 0.938rem 4.25rem 0
-  margin-bottom: 60px
+  padding: 0 4.25rem
+  margin-bottom: 50px
+
+  @include max-screen(1024px)
+    padding: .6rem 0 0
 
   @include max-screen(768px)
     margin-bottom: 4rem
     padding: .6rem 1rem 0
-  @include max-screen(1024px)
-    padding: .6rem 0 0
 
   .navbar-brand
     padding: 0
@@ -143,7 +160,6 @@ p
     @include max-screen(768px)
       display: none
 
-
     img
       display: block
       width: 100%
@@ -154,7 +170,6 @@ p
       @include max-screen(1024px)
         padding-right: 0
 
-
   .food
     img
       display: inline-block
@@ -163,6 +178,10 @@ p
       left: 54px
       top: 40px
       z-index: 2
+
+      @include max-screen(1024px)
+        left: 22px
+
       @include max-screen(768px)
         position: relative
         top: 0
@@ -172,13 +191,17 @@ p
         padding: 50px 0
         border-bottom: 2px solid $second-dop-color
         border-top: 2px solid $second-dop-color
-      @include max-screen(1024px)
-        left: 22px
 
+      @include max-screen(414px)
+        border-bottom: 0
+        padding-bottom: 0
+        padding-top: 30px
+        margin-bottom: 20px
 
   .org_bg
     @include max-screen(768px)
       display: none
+
     img
       display: inline-block
       max-width: 196px
@@ -186,22 +209,23 @@ p
       left: 0
       top: 83px
       z-index: 1
+      animation: slideInLeft 1s ease both
       @include max-screen(1024px)
         top: 81px
+
 
 .process
   .process_txt
     padding-top: 20px
-    @include max-screen(414px)
-      padding-top: 0
-      margin-bottom: 20px
+
     @include max-screen(768px)
       padding-top: 0
       margin-bottom: 100px
 
-    p
-      @include max-screen(768px)
-        font-size: 15px
+    @include max-screen(414px)
+      padding-top: 30px
+      border-top: 2px solid $second-dop-color
+      margin-bottom: 20px
 
   .process_img
     margin-bottom: 9.375rem
@@ -214,7 +238,7 @@ p
 
       img
         position: absolute
-        bottom: 201px
+        bottom: 191px
         right: 0
         z-index: 0
 
@@ -223,23 +247,28 @@ p
         display: inline-block
         width: 100%
         position: relative
-        padding-left: 93px
-        padding-right: 54px
+        padding-left: 85px
+        padding-right: 41px
         z-index: 2
-        @include max-screen(414px)
-          padding-right: 0
-          padding-left: 0
-        @include max-screen(768px)
-          padding: 50px 0
-          border-bottom: 2px solid $second-dop-color
-          border-top: 2px solid $second-dop-color
+
         @include max-screen(1024px)
           padding-left: 10px
           padding-right: 10px
 
+        @include max-screen(768px)
+          padding: 50px 0
+          border-bottom: 2px solid $second-dop-color
+          border-top: 2px solid $second-dop-color
+
+        @include max-screen(414px)
+          border-top: 0
+          padding: 0 0 30px
+    //border: 0
+
     .org_bg
       @include max-screen(768px)
         display: none
+
       img
         position: absolute
         top: 47px
@@ -274,10 +303,13 @@ p
       width: 100%
       padding: 1.313rem 0 1.125rem 1.75rem
       transition: all 1s ease-in-out 0s
-      @include max-screen(768px)
-        padding: 10px 0 10px 10px
+
       @include max-screen(1024px)
         padding: 10px 0 10px 10px
+
+      @include max-screen(768px)
+        padding: 10px 0 10px 10px
+
 
       &:hover .programs_button
         display: block
@@ -304,11 +336,12 @@ p
         color: #fff
         font-size: 0.875rem
         max-width: 300px
-        @include max-screen(768px)
-          display: none
 
         @include max-screen(1024px)
           font-size: 0.75rem
+
+        @include max-screen(768px)
+          display: none
 
 
       .programs_button
@@ -344,6 +377,7 @@ p
   background-color: #e4e4e4
   padding: 6.25rem 0
   margin-bottom: 9.375rem
+
   @include max-screen(414px)
     margin-bottom: 100px
 
@@ -366,6 +400,7 @@ p
     margin-right: $dop-size
     margin-left: $dop-size
     transition: all 500ms ease-in-out 0s
+
     @include max-screen(414px)
       margin-left: 0
       margin-right: 0
@@ -496,6 +531,7 @@ p
         padding-left: $dop-size
         padding-top: $dop-size
         margin-bottom: 1.375rem
+
   .orders_but
     button
       display: block
@@ -508,6 +544,7 @@ p
       margin: auto
       margin-bottom: 9.375rem
       transition: all 1s ease-in-out 0s
+
       &:hover
         background-color: $second-dop-color
         transition: all 1s ease-in-out 0s
@@ -546,14 +583,20 @@ p
         text-align: center
         margin-top: -1.313rem
         width: 100%
-        @include max-screen(414px)
-          font-size: $dop-size
-          top: 50%
+        @include max-screen(1024px)
+          font-size: 32px
+
         @include max-screen(768px)
           font-size: 25px
           top: 50%
-        @include max-screen(1024px)
-          font-size: 32px
+
+        @include max-screen(414px)
+          font-size: $dop-size
+          top: 50%
+
+        @include max-screen(375px)
+          font-size: 1rem
+          top: 62%
 
     .right_part
       p
@@ -565,6 +608,9 @@ p
         @include max-screen(768px)
           margin-bottom: 0
           font-size: 1rem
+        @include max-screen(375px)
+          font-size: .6rem
+          margin-bottom: 0
 
       a
         text-decoration: none
@@ -574,6 +620,9 @@ p
         transition: all 500ms ease-in-out 0s
         @include max-screen(414px)
           font-size: 0.75rem
+        @include max-screen(375px)
+          font-size: 0.65rem
+
 
         &:hover
           color: $first-dop-color
@@ -663,13 +712,10 @@ footer
     padding-left: 5.625rem
     margin-right: 1.875rem
     padding-bottom: 1.375rem
-    @include max-screen(414px)
-      display: block
-      margin: auto
+
+    @include max-screen(1024px)
       padding-left: 0
-      margin-right: 0
-      padding-bottom: 38px
-      border-bottom: 2px solid $first-dop-color
+      padding-right: 0
 
     @include max-screen(768px)
       padding-left: 0
@@ -677,9 +723,13 @@ footer
       margin: auto
       margin-bottom: 25px
 
-    @include max-screen(1024px)
+    @include max-screen(414px)
+      display: block
+      margin: auto
       padding-left: 0
-      padding-right: 0
+      margin-right: 0
+      padding-bottom: 38px
+      border-bottom: 2px solid $first-dop-color
 
     h4
       padding-top: 1.375rem
@@ -715,20 +765,20 @@ footer
     padding: 0 4.063rem 1.375rem
     border-right: 2px solid $first-dop-color
     border-left: 2px solid $first-dop-color
+    @include max-screen(768px)
+      padding: 0
+      padding-bottom: 38px
+      width: 50%
+      margin-left: 0
+      border-left: 0
+
     @include max-screen(414px)
+      width: 100%
       padding: 0 0 38px
       border-left: 0
       border-right: 0
       border-bottom: 2px solid $first-dop-color
       margin-left: 0
-
-    @include max-screen(768px)
-      padding: 0
-      padding-bottom: 38px
-
-      width: 50%
-      margin-left: 0
-      border-left: 0
 
     h4
       padding-top: 0
@@ -821,6 +871,48 @@ footer
 
   p
     font-size: 0.75rem
+
+  a
+    text-decoration: none
+
+    &:before
+      content: "\f095"
+      display: inline-block
+      font-family: Font Awesome\ 5 Free
+      font-weight: 900
+      //-moz-transform: rotate(100deg)
+      ////explorer
+      //-webkit-transform: rotate(100deg)
+      ////chrome/safari
+      //-o-transform: rotate(100deg)
+      ////opera
+      //-ms-transform: rotate(100deg)
+      ////firefox
+      //transform: rotate(100deg)
+      width: 86px
+      line-height: 86px
+      background-color: $first-dop-color
+      color: #fff
+      font-size: 45px
+      text-align: center
+      position: fixed
+      bottom: 65px
+      right: 30px
+      border-radius: 50%
+      transition: all 1s ease-in-out 0s
+      animation: pulse 1s 1s infinite
+      @include max-screen(414px)
+        right: 10px
+        line-height: 60px
+        width: 60px
+        font-size: 35px
+
+    &:hover:before
+      content: "Call"
+      font-size: $dop-size
+      font-family: $main-font
+      background-color: $second-dop-color
+      transition: all 1s ease-in-out 0s
 
 
 

@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript"
             src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -19,25 +20,28 @@
             crossorigin="anonymous"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/script.js"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
             integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
             crossorigin="anonymous"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
     <script src="bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
 </head>
 <body>
 <header>
-
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">HealthyFood</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+            <a class="navbar-brand wow slideInLeft" href="#">HealthyFood</a>
+            <button class="navbar-toggler wow slideInRight" type="button" data-toggle="collapse"
+                    data-target="#navbarTogglerDemo01"
                     aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav  wow slideInLeft">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Головна <span class="sr-only">(current)</span></a>
                     </li>
@@ -60,7 +64,7 @@
                         <a class="nav-link" href="#">Відгуки</a>
                     </li>
                 </ul>
-                <div class="numbers ml-auto">
+                <div class="numbers ml-auto wow slideInRight">
                     <p>(095) 17 00 117 <br> (063) 15 99 075</p>
                 </div>
             </div>
@@ -71,7 +75,7 @@
     <div class="container">
         <div class="row">
             <div class="d-md-flex align-items-md-center">
-                <div class=" col-md-7 ">
+                <div class="col-md-7 wow slideInLeft">
                     <div class="food">
                         <img src="images/about_us_03.jpg" alt="about_us">
                     </div>
@@ -83,7 +87,7 @@
                         <img src="images/org_bg_07.jpg" alt="org_bg">
                     </div>
                 </div>
-                <div class="col-md-5 text_about ">
+                <div class="col-md-5 text_about wow slideInRight">
                     <h2>ПРО НАС</h2>
                     <p>Ми молода та успішна компанія з приготування та доставки здорового харчування, яка працює з
                         2017 року. У нашому харчуванні Ви зможете відчути не тільки неймовірний смак, а безумовну якість
@@ -98,9 +102,8 @@
 <section class="process">
     <div class="container">
         <div class="row">
-<div class="d-md-flex align-items-md-center align-items-lg-start">
-            <div class="col-md-5 ">
-                <div class="process_txt">
+            <div class="d-md-flex align-items-md-center align-items-lg-start">
+                <div class="col-md-5 process_txt wow slideInLeft">
                     <h2>ПРОЦЕС ПРИГОТУВАННЯ</h2>
                     <p>Збалансоване меню містить оптимальну кількість необхідних людині вітамінів та корисних
                         речовин.
@@ -111,30 +114,29 @@
                         Страви доставляємо в протягом 2х годин після приготування.
                     </p>
                 </div>
-            </div>
-            <div class="col-md-7 ">
-                <div class="process_img">
-                    <div class="org_big_bg">
-                        <img src="images/org_big_bg_07.jpg" alt="org_big_bg">
-                    </div>
-                    <div class="food">
-                        <img src="images/process_03.jpg" alt="about_us">
-                    </div>
-                    <div class="org_bg">
-                        <img src="images/org_bg_07.jpg" alt="org_bg">
+                <div class="col-md-7 wow slideInRight">
+                    <div class="process_img">
+                        <div class="org_big_bg">
+                            <img src="images/org_big_bg_07.jpg" alt="org_big_bg">
+                        </div>
+                        <div class="food">
+                            <img src="images/process_03.jpg" alt="about_us">
+                        </div>
+                        <div class="org_bg">
+                            <img src="images/org_bg_07.jpg" alt="org_bg">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
         </div>
     </div>
 </section>
 <section class="programs">
     <div class="container">
-        <h3 class="text-center">Програми</h3>
+        <h3 class="text-center wow slideInLeft">Програми</h3>
         <div class="row">
-            <div class="col-md-4">
-                <div class="programs_img">
+            <div class="col-md-4 wow slideInRight">
+                <div class="programs_img ">
                     <img src="images/programm_1_03.jpg" alt="">
                     <div class="programs_txt ">
                         <h5>Баланс</h5>
@@ -146,7 +148,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 wow slideInRight">
                 <div class="programs_img">
                     <img src="images/programm_2_05.jpg" alt="">
                     <div class="programs_txt ">
@@ -160,7 +162,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 wow slideInRight">
                 <div class="programs_img">
                     <img src="images/programm_3_05.jpg" alt="">
                     <div class="programs_txt ">
@@ -173,7 +175,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+
+            <div class="col-md-4 wow slideInLeft">
                 <div class="programs_img">
                     <img src="images/programm_4_07.jpg" alt="">
                     <div class="programs_txt ">
@@ -186,7 +189,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 wow slideInLeft">
                 <div class="programs_img">
                     <img src="images/programm_5_09.jpg" alt="">
                     <div class="programs_txt ">
@@ -199,7 +202,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+
+            <div class="col-md-4 wow slideInLeft">
                 <div class="programs_img">
                     <img src="images/programm_6_09.jpg" alt="">
                     <div class="programs_txt ">
@@ -212,7 +216,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 wow slideInRight">
                 <div class="programs_img">
                     <img src="images/programm_7_09.jpg" alt="">
                     <div class="programs_txt ">
@@ -225,7 +229,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 wow slideInRight">
                 <div class="programs_img">
                     <img src="images/programm_8_10.jpg" alt="">
                     <div class="programs_txt ">
@@ -238,7 +242,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 wow slideInRight">
                 <div class="programs_img">
                     <img src="images/programm_9_10.jpg" alt="">
                     <div class="programs_txt ">
@@ -256,25 +260,25 @@
 </section>
 <section class="deliver_consultation">
     <div class="container">
-        <h3 class="text-center">ДОСТАВКА ТА КОНСУЛЬТАЦІЯ</h3>
+        <h3 class="text-center wow slideInLeft">ДОСТАВКА ТА КОНСУЛЬТАЦІЯ</h3>
         <div class="row">
             <div class="col-md-8 offset-md-2 text-center">
-                <p>Ми приймаємо замовлення на наступний день із 7:00 до 16:00.
+                <p class="wow slideInRight">Ми приймаємо замовлення на наступний день із 7:00 до 16:00.
                     Ми зв’яжемося з вами протягом дня або на наступний, якщо Ви звернулися пізніше.
                     Також Ви можете отримати консультацію щодо програм у нашого дієтолога.</p>
-                <a href="#">подзвонити</a>
-                <a href="#">ЗАМОВИТИ</a>
+                <a href="#" class="wow slideInLeft">подзвонити</a>
+                <a href="#" class="wow slideInRight">ЗАМОВИТИ</a>
             </div>
         </div>
     </div>
 </section>
-<section class="orders">
+<section class="orders ">
     <div class="container">
-        <h3 class="text-center">ЗАМОВЛЕННЯ</h3>
+        <h3 class="text-center wow slideInRight">ЗАМОВЛЕННЯ</h3>
         <div class="row">
             <form action="" method="post" class="col-md-10 offset-md-1">
                 <div class="row">
-                    <div class="dropdown col-md">
+                    <div class="dropdown col-md wow slideInLeft">
                         <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
                             Обрати раціон
                         </button>
@@ -290,7 +294,7 @@
                             <a class="dropdown-item" href="#">Смузі меню</a>
                         </div>
                     </div>
-                    <div class="dropdown col-md">
+                    <div class="dropdown col-md wow slideInLeft">
                         <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
                             Обрати час
                         </button>
@@ -306,7 +310,7 @@
                             <a class="dropdown-item" href="#">15:00-16:00</a>
                         </div>
                     </div>
-                    <div class="dropdown col-md">
+                    <div class="dropdown col-md wow slideInRight">
                         <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
                             Для кого
                         </button>
@@ -318,22 +322,24 @@
                 </div>
                 <div class="row">
                     <div class="second_form col-md">
-                        <input type="text" name="first_and_last_name" placeholder="ПІБ">
-                        <input type="text" name="address" placeholder="Адреса доставки (вулиця, будинок тощо)">
+                        <input type="text" name="first_and_last_name" placeholder="ПІБ" class="wow slideInLeft">
+                        <input type="text" name="address" placeholder="Адреса доставки (вулиця, будинок тощо)"
+                               class="wow slideInLeft">
                     </div>
                     <div class="second_form col-md">
-                        <input type="text" name="number" placeholder="Номер телефону">
-                        <input type="email" name="email" placeholder="Email">
+                        <input type="text" name="number" placeholder="Номер телефону" class="wow slideInRight">
+                        <input type="email" name="email" placeholder="Email" class="wow slideInRight">
                     </div>
                 </div>
                 <div class="row">
                     <div class="second_form col-md">
                         <textarea name="message"
-                                  placeholder="Додаткова інформація (алергія, неулюблені та улюблені продукти тощо)"></textarea>
+                                  placeholder="Додаткова інформація (алергія, неулюблені та улюблені продукти тощо)"
+                                  class="wow slideInLeft"></textarea>
                     </div>
                 </div>
                 <div class="orders_but text-center">
-                    <button type="submit">ВІДПРАВИТИ</button>
+                    <button type="submit" class="wow slideInRight">ВІДПРАВИТИ</button>
                 </div>
             </form>
         </div>
@@ -343,44 +349,44 @@
 
 <section class="stock">
     <div class="container">
-        <h3 class="text-center">АКЦІЇ</h3>
+        <h3 class="text-center wow slideInRight">АКЦІЇ</h3>
         <div class="row">
             <div class="common_block_stock col-md-10 offset-md-1  d-flex align-items-center">
-                <div class="left_part col-5 col-md-3">
+                <div class="left_part col-5 col-md-3 wow slideInLeft">
                     <img src="images/sails_10.jpg" alt="">
                     <p class="text-center">HealthyFood</p>
                 </div>
-                <div class="right_part">
+                <div class="right_part wow slideInRight">
                     <p>Стань постійним клієнтом HealthyFood</p>
                     <a href="#">Дізнатися більше</a>
                 </div>
             </div>
             <div class="common_block_stock col-md-10 offset-md-1 d-flex align-items-center">
-                <div class="left_part col-5 col-md-3">
+                <div class="left_part col-5 col-md-3 wow slideInLeft">
                     <img src="images/sails_10.jpg" alt="">
                     <p class="text-center">-50 грн/шт</p>
                 </div>
-                <div class="right_part">
+                <div class="right_part wow slideInRight">
                     <p>Замовляй доставку на 2х та отримай знижку</p>
                     <a href="#">Дізнатися більше</a>
                 </div>
             </div>
             <div class="common_block_stock col-md-10 offset-md-1  d-flex align-items-center">
-                <div class="left_part col-5 col-md-3">
+                <div class="left_part col-5 col-md-3 wow slideInLeft">
                     <img src="images/sails_10.jpg" alt="">
-                    <p class="text-center">+100 грн/шт</p>
+                    <p class="text-center wow slideInLeft">+100 грн/шт</p>
                 </div>
-                <div class="right_part">
+                <div class="right_part wow slideInRight">
                     <p>Запрошуй друзів та отримуй знижку на доставку </p>
                     <a href="#">Дізнатися більше</a>
                 </div>
             </div>
             <div class="common_block_stock col-md-10 offset-md-1  d-flex align-items-center">
-                <div class="left_part  col-5 col-md-3">
+                <div class="left_part  col-5 col-md-3 wow slideInLeft">
                     <img src="images/sails_10.jpg" alt="">
                     <p class="text-center">+100 грн/шт</p>
                 </div>
-                <div class="right_part">
+                <div class="right_part wow slideInRight">
                     <p>Отримай 100 грн бонусів за кожен скинутий кілограм </p>
                     <a href="#">Дізнатися більше</a>
                 </div>
@@ -390,19 +396,18 @@
 </section>
 <section class="comments">
     <div class="container">
-        <h3 class="text-center">КОМЕНТАРІ </h3>
+        <h3 class="text-center wow slideInRight">КОМЕНТАРІ </h3>
         <div class="carousel_text">
             <!-- Set up your HTML -->
             <div class="owl-carousel ">
                 <div class="row">
-
                     <div class="carousel-components col-md-12">
                         <div class="row">
                             <div class="content_carousel col-md-4">
-                                <div class="img_carousel">
+                                <div class="img_carousel wow slideInLeft">
                                     <img src="images/comment_1_09.jpg" alt="staff">
                                 </div>
-                                <div class="txt_carousel">
+                                <div class="txt_carousel wow slideInRight">
                                     <h5>Євген Будько</h5>
                                     <div class="marks float-right">
                                         <a href="#"></a>
@@ -420,10 +425,10 @@
                                 </div>
                             </div>
                             <div class="content_carousel col-md-4">
-                                <div class="img_carousel">
+                                <div class="img_carousel wow slideInLeft">
                                     <img src="images/comment_2_11.jpg" alt="staff">
                                 </div>
-                                <div class="txt_carousel">
+                                <div class="txt_carousel wow slideInRight">
                                     <h5>Ганна Пліс</h5>
                                     <div class="marks float-right">
                                         <a href="#"></a>
@@ -441,10 +446,10 @@
                                 </div>
                             </div>
                             <div class="content_carousel col-md-4">
-                                <div class="img_carousel">
+                                <div class="img_carousel wow slideInLeft">
                                     <img src="images/comment_3_10.jpg" alt="staff">
                                 </div>
-                                <div class="txt_carousel">
+                                <div class="txt_carousel wow slideInRight">
                                     <h5>Катя Вілкова</h5>
                                     <div class="marks float-right">
                                         <a href="#"></a>
@@ -470,10 +475,10 @@
                     <div class="carousel-components col-md-12">
                         <div class="row">
                             <div class="content_carousel col-md-4">
-                                <div class="img_carousel">
+                                <div class="img_carousel wow slideInLeft">
                                     <img src="images/comment_4_13.jpg" alt="staff">
                                 </div>
-                                <div class="txt_carousel">
+                                <div class="txt_carousel wow slideInRight">
                                     <h5>Артур Кондрат</h5>
                                     <div class="marks float-right">
                                         <a href="#"></a>
@@ -493,10 +498,10 @@
                                 </div>
                             </div>
                             <div class="content_carousel col-md-4">
-                                <div class="img_carousel">
+                                <div class="img_carousel wow slideInLeft">
                                     <img src="images/comment_5_15.jpg" alt="staff">
                                 </div>
-                                <div class="txt_carousel">
+                                <div class="txt_carousel wow slideInRight">
                                     <h5>Марія Чув</h5>
                                     <div class="marks float-right">
                                         <a href="#"></a>
@@ -515,10 +520,10 @@
                                 </div>
                             </div>
                             <div class="content_carousel col-md-4">
-                                <div class="img_carousel">
+                                <div class="img_carousel wow slideInLeft">
                                     <img src="images/comment_6_18.jpg" alt="staff">
                                 </div>
-                                <div class="txt_carousel">
+                                <div class="txt_carousel wow slideInRight">
                                     <h5>Христина Малаєва</h5>
                                     <div class="marks float-right">
                                         <a href="#"></a>
@@ -544,10 +549,10 @@
                     <div class="carousel-components col-md-12">
                         <div class="row">
                             <div class="content_carousel col-md-4">
-                                <div class="img_carousel">
+                                <div class="img_carousel wow slideInLeft">
                                     <img src="images/comment_7_14.jpg" alt="staff">
                                 </div>
-                                <div class="txt_carousel">
+                                <div class="txt_carousel wow slideInRight">
                                     <h5>Анатолій Кімчук</h5>
                                     <div class="marks float-right">
                                         <a href="#"></a>
@@ -564,10 +569,10 @@
                                 </div>
                             </div>
                             <div class="content_carousel col-md-4">
-                                <div class="img_carousel">
+                                <div class="img_carousel wow slideInLeft">
                                     <img src="images/comment_8_17.jpg" alt="staff">
                                 </div>
-                                <div class="txt_carousel">
+                                <div class="txt_carousel wow slideInRight">
                                     <h5>Лариса Гулькова</h5>
                                     <div class="marks float-right">
                                         <a href="#"></a>
@@ -585,10 +590,10 @@
                                 </div>
                             </div>
                             <div class="content_carousel col-md-4">
-                                <div class="img_carousel">
+                                <div class="img_carousel wow slideInLeft">
                                     <img src="images/comment_9_10.jpg" alt="staff">
                                 </div>
-                                <div class="txt_carousel">
+                                <div class="txt_carousel wow slideInRight">
                                     <h5>Яна Булигіна</h5>
                                     <div class="marks float-right">
                                         <a href="#"></a>
@@ -615,7 +620,7 @@
 </section>
 <footer>
     <div class="container">
-        <div class="d-lg-flex">
+        <div class="d-lg-flex wow slideInUp">
             <div class="footer_form  text-center">
                 <h4>Будь у курсі!</h4>
                 <p>Підпишись на поради від нашого дієтолога</p>
@@ -625,32 +630,33 @@
                 </form>
             </div>
             <div class="d-md-flex">
-            <div class="social">
-                <h4>Напишіть нам</h4>
-                <div class="write_to_us">
-                    <a href="#" target="_blank" name="viber"></a>
-                    <a href="#" target="_blank" name="telegram"></a>
-                    <a href="#" target="_blank" name="watsapp"></a>
+                <div class="social">
+                    <h4>Напишіть нам</h4>
+                    <div class="write_to_us">
+                        <a href="#" target="_blank" name="viber"></a>
+                        <a href="#" target="_blank" name="telegram"></a>
+                        <a href="#" target="_blank" name="watsapp"></a>
+                    </div>
+                    <h4>Соц мережі</h4>
+                    <div class="soc">
+                        <a href="#" target="_blank" name="instagram"></a>
+                        <a href="#" target="_blank" name="facebook"></a>
+                    </div>
                 </div>
-                <h4>Соц мережі</h4>
-                <div class="soc">
-                    <a href="#" target="_blank" name="instagram"></a>
-                    <a href="#" target="_blank" name="facebook"></a>
+                <div class="contacts">
+                    <h4>Контакти:</h4>
+                    <p>@healthyfood@uk.net</p>
+                    <p>+38 (095) 17 00 117</p>
+                    <p> +38 (063) 15 990 75</p>
                 </div>
             </div>
-            <div class="contacts">
-                <h4>Контакти:</h4>
-                <p>@healthyfood@uk.net</p>
-                <p>+38 (095) 17 00 117</p>
-                <p> +38 (063) 15 990 75</p>
-            </div>
-        </div>
         </div>
     </div>
 </footer>
 <section class="down_footer">
     <div class="container">
-        <p> © 2020 | HealthyFood | Website Template designed by Taratkevych Hanna</p>
+        <p class="wow slideInDown"> © 2020 | HealthyFood | Website Template designed by Taratkevych Hanna</p>
+        <a href="#"></a>
     </div>
 </section>
 </body>
