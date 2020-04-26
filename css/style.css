@@ -1,18 +1,18 @@
 @charset "UTF-8";
-.stock_100hrn_kg h2, .stock_customer h2 {
+.stock_100hrn_kg h2, .stock_customer h2, .stock_2_orders h2 {
   font-family: "Open Sans", sans-serif;
   text-transform: inherit;
   color: #2b2c2c;
   font-weight: 600;
   margin-bottom: 30px; }
 
-.stock_100hrn_kg h4, .stock_customer h4 {
+.stock_100hrn_kg h4, .stock_customer h4, .stock_2_orders h4 {
   color: #2b2c2c;
   font-family: "Montserrat", sans-serif;
   font-size: 25px;
   font-weight: 600; }
 
-.stock_100hrn_kg h5, .stock_customer h5 {
+.stock_100hrn_kg h5, .stock_customer h5, .stock_2_orders h5 {
   color: #2b2c2c;
   font-family: "Montserrat", sans-serif;
   font-size: 1.25rem;
@@ -785,7 +785,7 @@ footer {
 /*page stock 100hrn for kg */
 .stock_100hrn_kg h4:last-of-type {
   color: #ff9649;
-  margin-bottom: 62px; }
+  margin-bottom: 30px; }
 .stock_100hrn_kg ul {
   color: #ff9649;
   padding-left: 35px;
@@ -807,7 +807,7 @@ footer {
 /*page stock_customer */
 .stock_customer h4:last-of-type {
   color: #ff9649;
-  margin-bottom: 62px; }
+  margin-bottom: 30px; }
 .stock_customer ul {
   color: #ff9649;
   padding-left: 35px;
@@ -828,5 +828,21 @@ footer {
       color: #ff9649;
       font-weight: 600;
       font-size: 1.25rem; }
+
+/*page stock_2_orders */
+.stock_2_orders h4:last-of-type {
+  color: #ff9649;
+  margin-bottom: 30px; }
+.stock_2_orders ul {
+  color: #ff9649;
+  padding-left: 35px;
+  margin-bottom: 50px; }
+  .stock_2_orders ul li span {
+    color: #2b2c2c;
+    font-family: "Montserrat", sans-serif; }
+    .stock_2_orders ul li span a {
+      color: #ff9649; }
+.stock_2_orders p {
+  margin-bottom: 50px; }
 
 /*# sourceMappingURL=style.css.map */
