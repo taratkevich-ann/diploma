@@ -744,43 +744,42 @@ footer {
       margin-bottom: 1.125rem; }
     footer .contacts p {
       margin-bottom: 0.625rem; }
-
-.down_footer {
-  background-color: #fff;
-  padding: 0.813rem 0; }
-  .down_footer p {
-    font-size: 0.75rem; }
-  .down_footer a {
-    text-decoration: none; }
-    .down_footer a:before {
-      content: "";
-      display: inline-block;
-      font-family: Font Awesome\ 5 Free;
-      font-weight: 900;
-      width: 86px;
-      line-height: 86px;
-      background-color: #43d283;
-      color: #fff;
-      font-size: 45px;
-      text-align: center;
-      position: fixed;
-      bottom: 65px;
-      right: 30px;
-      border-radius: 50%;
-      transition: all 1s ease-in-out 0s;
-      animation: pulse 1s 1s infinite; }
-      @media screen and (max-width: 414px) {
-        .down_footer a:before {
-          right: 10px;
-          line-height: 60px;
-          width: 60px;
-          font-size: 35px; } }
-    .down_footer a:hover:before {
-      content: "Call";
-      font-size: 1.25rem;
-      font-family: "Montserrat", sans-serif;
-      background-color: #ff9649;
-      transition: all 1s ease-in-out 0s; }
+  footer .down_footer {
+    background-color: #fff;
+    padding: 0.813rem 0; }
+    footer .down_footer p {
+      font-size: 0.75rem; }
+    footer .down_footer a {
+      text-decoration: none; }
+      footer .down_footer a:before {
+        content: "";
+        display: inline-block;
+        font-family: Font Awesome\ 5 Free;
+        font-weight: 900;
+        width: 86px;
+        line-height: 86px;
+        background-color: #43d283;
+        color: #fff;
+        font-size: 45px;
+        text-align: center;
+        position: fixed;
+        bottom: 65px;
+        right: 30px;
+        border-radius: 50%;
+        transition: all 1s ease-in-out 0s;
+        animation: pulse 1s 1s infinite; }
+        @media screen and (max-width: 414px) {
+          footer .down_footer a:before {
+            right: 10px;
+            line-height: 60px;
+            width: 60px;
+            font-size: 35px; } }
+      footer .down_footer a:hover:before {
+        content: "Call";
+        font-size: 1.25rem;
+        font-family: "Montserrat", sans-serif;
+        background-color: #ff9649;
+        transition: all 1s ease-in-out 0s; }
 
 /*page stock 100hrn for kg */
 .stock_100hrn_kg h4:last-of-type {
