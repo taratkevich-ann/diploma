@@ -1,18 +1,18 @@
 @charset "UTF-8";
-.stock_100hrn_kg h2, .stock_customer h2, .stock_2_orders h2 {
+.stock_100hrn_kg h2, .stock_customer h2, .stock_2_orders h2, .stock_100hrn_for_friend h2 {
   font-family: "Open Sans", sans-serif;
   text-transform: inherit;
   color: #2b2c2c;
   font-weight: 600;
   margin-bottom: 30px; }
 
-.stock_100hrn_kg h4, .stock_customer h4, .stock_2_orders h4 {
+.stock_100hrn_kg h4, .stock_customer h4, .stock_2_orders h4, .stock_100hrn_for_friend h4 {
   color: #2b2c2c;
   font-family: "Montserrat", sans-serif;
   font-size: 25px;
   font-weight: 600; }
 
-.stock_100hrn_kg h5, .stock_customer h5, .stock_2_orders h5 {
+.stock_100hrn_kg h5, .stock_customer h5, .stock_2_orders h5, .stock_100hrn_for_friend h5 {
   color: #2b2c2c;
   font-family: "Montserrat", sans-serif;
   font-size: 1.25rem;
@@ -829,20 +829,22 @@ footer {
       font-weight: 600;
       font-size: 1.25rem; }
 
-/*page stock_2_orders */
-.stock_2_orders h4:last-of-type {
+/*pages stock_2_orders and stock_100hrn_for_friend */
+.stock_2_orders h4:last-of-type, .stock_100hrn_for_friend h4:last-of-type {
   color: #ff9649;
   margin-bottom: 30px; }
-.stock_2_orders ul {
+.stock_2_orders ul, .stock_100hrn_for_friend ul {
   color: #ff9649;
   padding-left: 35px;
   margin-bottom: 50px; }
-  .stock_2_orders ul li span {
+  .stock_2_orders ul li span, .stock_100hrn_for_friend ul li span {
     color: #2b2c2c;
     font-family: "Montserrat", sans-serif; }
-    .stock_2_orders ul li span a {
+    .stock_2_orders ul li span a, .stock_100hrn_for_friend ul li span a {
       color: #ff9649; }
-.stock_2_orders p {
+.stock_2_orders p, .stock_100hrn_for_friend p {
   margin-bottom: 50px; }
+.stock_2_orders .attention p, .stock_100hrn_for_friend .attention p {
+  margin-bottom: 9.375rem; }
 
 /*# sourceMappingURL=style.css.map */
