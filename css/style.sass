@@ -15,6 +15,25 @@ $third-dop-color: #e4e4e4
   @media screen and (max-width: $res)
     @content
 
+%for_h2
+  font-family: $dop-font
+  text-transform: inherit
+  color: $font-color
+  font-weight: 600
+  margin-bottom: 30px
+
+%h4_for_stocks
+  color: $font-color
+  font-family: $main-font
+  font-size: 25px
+  font-weight: 600
+
+%h5_for_stocks
+  color: $font-color
+  font-family: $main-font
+  font-size: $dop-size
+  font-weight: 600
+  margin-bottom: $dop-size
 
 @keyframes pulse
   0%
@@ -29,22 +48,15 @@ $third-dop-color: #e4e4e4
     -webkit-transform: scale3d(1, 1, 1)
     transform: scale3d(1, 1, 1)
 
-
-
 *
   padding: 0
   margin: 0
 
-
-/* main page*/
-
 a
   text-decoration: none
 
-
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6
   margin-bottom: 0
-
 
 h2
   font-size: 1.875rem
@@ -151,6 +163,7 @@ p
         margin-top: -1.5rem
         margin-left: -3.75rem
 
+/* main page*/
 .about_us
   margin-bottom: 170px
   @include max-screen(768px)
@@ -880,15 +893,6 @@ footer
       display: inline-block
       font-family: Font Awesome\ 5 Free
       font-weight: 900
-      //-moz-transform: rotate(100deg)
-      ////explorer
-      //-webkit-transform: rotate(100deg)
-      ////chrome/safari
-      //-o-transform: rotate(100deg)
-      ////opera
-      //-ms-transform: rotate(100deg)
-      ////firefox
-      //transform: rotate(100deg)
       width: 86px
       line-height: 86px
       background-color: $first-dop-color
@@ -913,6 +917,48 @@ footer
       font-family: $main-font
       background-color: $second-dop-color
       transition: all 1s ease-in-out 0s
+
+/*page stock 100hrn for kg*/
+
+.stock_100hrn_kg
+  h2
+    @extend %for_h2
+
+  h4
+    @extend %h4_for_stocks
+    &:last-of-type
+      color: $second-dop-color
+      margin-bottom: 62px
+
+  h5
+    @extend %h5_for_stocks
+
+  ul
+    color: $second-dop-color
+    padding-left: 35px
+    margin-bottom: 50px
+    li
+      span
+        color: $font-color
+        font-family: $main-font
+
+        a
+          color: $second-dop-color
+
+  p
+    margin-bottom: $dop-size
+    &:first-of-type
+      margin-bottom: 0
+    &:nth-child(3)
+      margin-bottom: 50px
+
+
+  .attention
+    p
+      margin-bottom: 9.375rem
+
+
+
 
 
 

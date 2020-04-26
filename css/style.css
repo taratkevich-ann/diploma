@@ -1,4 +1,24 @@
 @charset "UTF-8";
+.stock_100hrn_kg h2 {
+  font-family: "Open Sans", sans-serif;
+  text-transform: inherit;
+  color: #2b2c2c;
+  font-weight: 600;
+  margin-bottom: 30px; }
+
+.stock_100hrn_kg h4 {
+  color: #2b2c2c;
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  font-weight: 600; }
+
+.stock_100hrn_kg h5 {
+  color: #2b2c2c;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem; }
+
 @keyframes pulse {
   0% {
     -webkit-transform: scale3d(1, 1, 1);
@@ -13,7 +33,6 @@
   padding: 0;
   margin: 0; }
 
-/* main page */
 a {
   text-decoration: none; }
 
@@ -109,6 +128,7 @@ p {
       margin-top: -1.5rem;
       margin-left: -3.75rem; }
 
+/* main page */
 .about_us {
   margin-bottom: 170px; }
   @media screen and (max-width: 768px) {
@@ -761,5 +781,27 @@ footer {
       font-family: "Montserrat", sans-serif;
       background-color: #ff9649;
       transition: all 1s ease-in-out 0s; }
+
+/*page stock 100hrn for kg */
+.stock_100hrn_kg h4:last-of-type {
+  color: #ff9649;
+  margin-bottom: 62px; }
+.stock_100hrn_kg ul {
+  color: #ff9649;
+  padding-left: 35px;
+  margin-bottom: 50px; }
+  .stock_100hrn_kg ul li span {
+    color: #2b2c2c;
+    font-family: "Montserrat", sans-serif; }
+    .stock_100hrn_kg ul li span a {
+      color: #ff9649; }
+.stock_100hrn_kg p {
+  margin-bottom: 1.25rem; }
+  .stock_100hrn_kg p:first-of-type {
+    margin-bottom: 0; }
+  .stock_100hrn_kg p:nth-child(3) {
+    margin-bottom: 50px; }
+.stock_100hrn_kg .attention p {
+  margin-bottom: 9.375rem; }
 
 /*# sourceMappingURL=style.css.map */
