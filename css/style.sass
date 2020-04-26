@@ -96,9 +96,11 @@ p
     font-size: 3.25rem
     font-family: 'Lobster', cursive
     color: $first-dop-color !important
+
     @include max-screen(1024px)
       margin-right: 2rem
       font-size: 40px
+
 
   .navbar-toggler
 
@@ -112,7 +114,7 @@ p
     // 6px
     color: $font-color
     text-transform: uppercase
-    transition: all 500ms ease-in-out 0s
+    transition: all 300ms ease-in-out 0s
     @include max-screen(1024px)
       padding-left: 0.2rem
       padding-right: 0.2rem
@@ -120,7 +122,7 @@ p
 
     &:hover
       color: $second-dop-color
-      transition: all 500ms ease-in-out 0s
+      transition: all 300ms ease-in-out 0s
 
     &:hover:after
       content: ''
@@ -956,6 +958,49 @@ footer
   .attention
     p
       margin-bottom: 9.375rem
+
+/*page stock_customer*/
+
+.stock_customer
+  h2
+    @extend %for_h2
+
+  h4
+    @extend %h4_for_stocks
+    &:last-of-type
+      color: $second-dop-color
+      margin-bottom: 62px
+
+  h5
+    @extend %h5_for_stocks
+
+  ul
+    color: $second-dop-color
+    padding-left: 35px
+    margin-bottom: 50px
+    li
+      span
+        color: $font-color
+        font-family: $main-font
+
+        a
+          color: $second-dop-color
+
+  p
+    margin-bottom: 50px
+
+
+  .attention
+    margin-bottom: 9.375rem
+    span
+      font-family: $main-font
+      color: $font-color
+
+      &:first-of-type
+        color: $second-dop-color
+        font-weight: 600
+        font-size: $dop-size
+
 
 
 
