@@ -22,11 +22,11 @@
 .program_description .price .program_name {
   font-family: "Open Sans", sans-serif;
   font-size: 1.25rem;
-  margin-bottom: 10px; }
+  margin-bottom: 12px; }
 
 .program_description .price .main_cost_block .cost .value h5 {
   font-family: "Montserrat", sans-serif;
-  font-size: 45px;
+  font-size: 38px;
   margin-right: 10px;
   font-weight: 600;
   color: #43d283; }
@@ -387,55 +387,56 @@ p {
     .orders .dropdown {
       margin-right: 0;
       margin-left: 0; } }
-  .orders .dropdown .show .btn-primary.dropdown-toggle, .orders .dropdown .btn-primary {
+.orders .show .btn-primary.dropdown-toggle, .orders .btn-primary {
+  display: inline-block;
+  width: 100%;
+  background-color: #e4e4e4;
+  color: #2b2c2c;
+  font-family: "Montserrat", sans-serif;
+  border: 0;
+  outline: 0;
+  text-align: left; }
+.orders .btn-primary:not(:disabled):not(.disabled).active, .orders .btn-primary:not(:disabled):not(.disabled):active, .orders .show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  border: 0 !important;
+  background-color: #43d283 !important; }
+.orders .dropdown-toggle {
+  position: relative; }
+  .orders .dropdown-toggle:after {
+    content: "";
     display: inline-block;
-    width: 100%;
-    background-color: #e4e4e4;
-    color: #2b2c2c;
-    font-family: "Montserrat", sans-serif;
+    font-family: Font Awesome\ 5 Free;
+    font-weight: 900;
+    margin-left: 0;
+    vertical-align: 0;
     border: 0;
-    outline: 0;
-    text-align: left; }
-  .orders .dropdown .btn-primary:not(:disabled):not(.disabled).active, .orders .dropdown .btn-primary:not(:disabled):not(.disabled):active, .orders .dropdown .show > .btn-primary.dropdown-toggle {
-    border: 0 !important;
-    background-color: #43d283 !important; }
-  .orders .dropdown .dropdown-toggle {
-    position: relative; }
-    .orders .dropdown .dropdown-toggle:after {
-      content: "";
-      display: inline-block;
-      font-family: Font Awesome\ 5 Free;
-      font-weight: 900;
-      margin-left: 0;
-      vertical-align: 0;
-      border: 0;
-      position: absolute;
-      right: 1.25rem; }
-  .orders .dropdown .btn {
-    display: inline-block;
-    width: 100%;
-    text-align: left;
-    border-radius: 0;
-    border: 0;
-    padding: 0 1.375rem;
-    line-height: 3.125rem;
-    transition: all 1s ease-in-out 0s; }
-  .orders .dropdown .dropdown-menu.show {
-    width: 100%;
-    box-sizing: border-box; }
-  .orders .dropdown .dropdown-menu {
-    margin: 0;
-    border-radius: 0;
-    padding: 0;
-    color: #2b2c2c;
-    font-family: "Montserrat", sans-serif;
-    box-sizing: border-box; }
-  .orders .dropdown .dropdown-item {
-    display: inline-block;
-    width: 100%;
-    box-sizing: border-box;
-    color: #2b2c2c;
-    font-family: "Montserrat", sans-serif; }
+    position: absolute;
+    right: 1.25rem; }
+.orders .btn {
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+  border-radius: 0;
+  border: 0;
+  padding: 0 1.375rem;
+  line-height: 3.125rem;
+  transition: all 1s ease-in-out 0s; }
+.orders .dropdown-menu.show {
+  width: 100%;
+  box-sizing: border-box; }
+.orders .dropdown-menu {
+  margin: 0;
+  border-radius: 0;
+  padding: 0;
+  color: #2b2c2c;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box; }
+.orders .dropdown-item {
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  color: #2b2c2c;
+  font-family: "Montserrat", sans-serif; }
 .orders form {
   font-family: "Montserrat", sans-serif;
   color: #2b2c2c;
@@ -869,62 +870,59 @@ footer {
 .program_description .price .program_name span:first-of-type {
   font-weight: 600; }
 .program_description .price .main_cost_block .cost .value {
-  padding-bottom: 10px;
+  padding-bottom: 5px;
   border-bottom: 2px solid #43d283;
-  margin-bottom: 10px; }
+  margin-bottom: 5px; }
   .program_description .price .main_cost_block .cost .value p:nth-child(odd) {
     color: #43d283;
-    font-weight: 600; }
+    font-weight: 600;
+    margin-bottom: -4px; }
 .program_description .price .main_cost_block .cost span {
   display: block;
   font-size: 14px;
   max-width: 140px;
-  margin-bottom: 10px; }
-.program_description .price .dropdown {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0 0.625rem 1.375rem; }
-  .program_description .price .dropdown .show .btn-primary.dropdown-toggle, .program_description .price .dropdown .btn-primary {
-    background-color: #e4e4e4;
-    color: #2b2c2c;
-    font-family: "Montserrat", sans-serif;
-    border: 0;
-    outline: 0;
-    text-align: left; }
-  .program_description .price .dropdown .dropdown-toggle {
-    position: relative; }
-    .program_description .price .dropdown .dropdown-toggle:after {
-      content: "";
-      display: inline-block;
-      font-family: Font Awesome\ 5 Free;
-      font-weight: 900;
-      margin-left: 0;
-      vertical-align: 0;
-      border: 0;
-      position: absolute;
-      right: 1.25rem; }
-  .program_description .price .dropdown .btn {
-    text-align: left;
-    border-radius: 0;
-    border: 0;
-    padding: 0 1.375rem;
-    line-height: 3.125rem;
-    transition: all 1s ease-in-out 0s; }
-  .program_description .price .dropdown .dropdown-menu.show {
-    width: 100%;
-    box-sizing: border-box; }
-  .program_description .price .dropdown .dropdown-menu {
-    margin: 0;
-    border-radius: 0;
-    padding: 0;
-    color: #2b2c2c;
-    font-family: "Montserrat", sans-serif;
-    box-sizing: border-box; }
-  .program_description .price .dropdown .dropdown-item {
+  margin-bottom: 1.25rem; }
+.program_description .price .btn {
+  border: 0;
+  border-radius: 0;
+  padding: 0 47px 0 37px;
+  line-height: 44px; }
+.program_description .price .btn-primary {
+  background-color: transparent;
+  border: 1px solid #2b2c2c;
+  color: #2b2c2c; }
+.program_description .price .dropdown-toggle {
+  position: relative; }
+  .program_description .price .dropdown-toggle:after {
+    content: "";
     display: inline-block;
-    width: 100%;
-    box-sizing: border-box;
-    color: #2b2c2c;
-    font-family: "Montserrat", sans-serif; }
+    font-family: Font Awesome\ 5 Free;
+    font-weight: 900;
+    margin-left: 0;
+    vertical-align: 0;
+    border: 0;
+    position: absolute;
+    right: 1.25rem; }
+.program_description .price .btn-primary:not(:disabled):not(.disabled).active, .program_description .price .btn-primary:not(:disabled):not(.disabled):active, .program_description .price .show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  border: 0 !important;
+  background-color: #43d283 !important; }
+.program_description .price .dropdown-item {
+  color: #2b2c2c;
+  padding: 0.2rem 1.1rem 0.2rem 1rem;
+  font-family: "Montserrat", sans-serif; }
+.program_description .price .order_program_page {
+  display: inline-block;
+  line-height: 44px;
+  padding-left: 28px;
+  padding-right: 28px;
+  background-color: #43d283;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  border: 0;
+  transition: all 1s ease-in-out 0s; }
+  .program_description .price .order_program_page:hover {
+    background-color: #ff9649;
+    transition: all 1s ease-in-out 0s; }
 
 /*# sourceMappingURL=style.css.map */
