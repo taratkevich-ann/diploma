@@ -19,17 +19,24 @@
   font-weight: 600;
   margin-bottom: 1.25rem; }
 
-.program_description .price .program_name {
+.program_description .price .program_name, .program_description .program_information h3 {
   font-family: "Open Sans", sans-serif;
   font-size: 1.25rem;
   margin-bottom: 12px; }
 
-.program_description .price .main_cost_block .cost .value h5 {
+.program_description .price .main_cost_block .cost .value h4 {
   font-family: "Montserrat", sans-serif;
   font-size: 38px;
   margin-right: 10px;
   font-weight: 600;
   color: #43d283; }
+
+.program_description .program_information .menu .time h5 {
+  color: #2b2c2c;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase; }
 
 @keyframes pulse {
   0% {
@@ -41,6 +48,32 @@
   100% {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1); } }
+@keyframes flip {
+  0% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; }
+  40% {
+    -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; }
+  50% {
+    -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; }
+  80% {
+    -webkit-transform: perspective(400px) scale3d(0.5, 0.5, 0.5);
+    transform: perspective(400px) scale3d(0.5, 0.5, 0.5);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; }
+  100% {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; } }
 * {
   padding: 0;
   margin: 0; }
@@ -864,6 +897,28 @@ footer {
   margin-bottom: 9.375rem; }
 
 /*programs */
+.program_description .basket_programs a {
+  text-decoration: none; }
+  .program_description .basket_programs a:after {
+    content: "";
+    display: inline-block;
+    font-family: Font Awesome\ 5 Free;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 65px;
+    width: 86px;
+    color: #fff;
+    border-left: 2px solid #2b2c2c;
+    text-align: center;
+    background-color: #43d283;
+    position: fixed;
+    right: 0;
+    top: 40%;
+    transition: all 1s ease-in-out; }
+  .program_description .basket_programs a:hover:after {
+    background-color: #ff9649;
+    transition: all 1s ease-in-out;
+    animation: flip 3s; }
 .program_description img {
   display: inline-block;
   width: 100%; }
@@ -885,7 +940,7 @@ footer {
 .program_description .price .btn {
   border: 0;
   border-radius: 0;
-  padding: 0 47px 0 37px;
+  padding: 0 57px 0 47px;
   line-height: 44px; }
 .program_description .price .btn-primary {
   background-color: transparent;
@@ -924,5 +979,66 @@ footer {
   .program_description .price .order_program_page:hover {
     background-color: #ff9649;
     transition: all 1s ease-in-out 0s; }
+.program_description .program_information {
+  margin-top: 35px; }
+  .program_description .program_information h3 {
+    margin-bottom: 1.25rem;
+    font-weight: 600;
+    text-transform: inherit; }
+  .program_description .program_information p {
+    margin-bottom: 10px; }
+  .program_description .program_information ul {
+    font-family: "Montserrat", sans-serif;
+    color: #43d283;
+    padding-left: 35px;
+    margin-bottom: 1.25rem; }
+    .program_description .program_information ul li {
+      margin-bottom: 5px; }
+      .program_description .program_information ul li:last-of-type {
+        margin-bottom: 50px; }
+      .program_description .program_information ul li span {
+        font-family: "Montserrat", sans-serif;
+        color: #2b2c2c; }
+  .program_description .program_information .menu .time {
+    border-bottom: 2px solid #2b2c2c;
+    margin-bottom: 5px; }
+    .program_description .program_information .menu .time p {
+      margin-bottom: 5px; }
+  .program_description .program_information .menu .recipe {
+    margin-bottom: 30px; }
+    .program_description .program_information .menu .recipe:last-of-type {
+      margin-bottom: 150px; }
+  .program_description .program_information .menu .ui-tabs .ui-tabs-nav {
+    padding: 0; }
+  .program_description .program_information .menu .ui-widget.ui-widget-content {
+    border: 0;
+    border-radius: 0; }
+  .program_description .program_information .menu .ui-widget-content {
+    color: #2b2c2c; }
+  .program_description .program_information .menu .ui-widget {
+    font-family: "Montserrat", sans-serif; }
+  .program_description .program_information .menu .ui-tabs {
+    padding: 0; }
+  .program_description .program_information .menu .ui-widget-header {
+    border: 0;
+    background: transparent; }
+  .program_description .program_information .menu .ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor, .program_description .program_information .menu .ui-tabs .ui-tabs-nav li.ui-state-disabled .ui-tabs-anchor, .program_description .program_information .menu .ui-tabs .ui-tabs-nav li.ui-tabs-loading .ui-tabs-anchor {
+    color: #ff9649; }
+  .program_description .program_information .menu .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+    padding: 0 10px;
+    float: inherit; }
+  .program_description .program_information .menu .ui-tabs-anchor {
+    outline: none; }
+  .program_description .program_information .menu .ui-state-default a, .program_description .program_information .menu .ui-state-default a:link, .program_description .program_information .menu .ui-state-default a:visited, .program_description .program_information .menu a.ui-button, .program_description .program_information .menu a:link.ui-button, .program_description .program_information .menu a:visited.ui-button, .program_description .program_information .menu .ui-button {
+    color: #2b2c2c; }
+  .program_description .program_information .menu .ui-tabs .ui-tabs-nav li {
+    margin: 0; }
+  .program_description .program_information .menu .ui-state-default, .program_description .program_information .menu .ui-widget-content .ui-state-default, .program_description .program_information .menu .ui-widget-header .ui-state-default, .program_description .program_information .menu .ui-button, .program_description .program_information .menu html .ui-button.ui-state-disabled:hover, .program_description .program_information .menu html .ui-button.ui-state-disabled:active {
+    border: 0;
+    background: transparent;
+    color: #2b2c2c;
+    font-weight: 600; }
+  .program_description .program_information .menu .ui-tabs .ui-tabs-panel {
+    padding: 0; }
 
 /*# sourceMappingURL=style.css.map */

@@ -40,12 +40,19 @@ $third-dop-color: #e4e4e4
   font-size: $dop-size
   margin-bottom: 12px
 
-%h5_for_program_page
+%h4_for_program_page
   font-family: $main-font
   font-size: 38px
   margin-right: 10px
   font-weight: 600
   color: $first-dop-color
+
+%h5_for_programs
+  color: $font-color
+  font-family: $dop-font
+  font-size: $main-font-size
+  font-weight: 600
+  text-transform: uppercase
 
 
 @keyframes pulse
@@ -60,6 +67,39 @@ $third-dop-color: #e4e4e4
   100%
     -webkit-transform: scale3d(1, 1, 1)
     transform: scale3d(1, 1, 1)
+
+@keyframes flip
+  0%
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -360deg)
+    transform: perspective(400px) rotate3d(0, 1, 0, -360deg)
+    -webkit-animation-timing-function: ease-out
+    animation-timing-function: ease-out
+
+  40%
+    -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg)
+    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg)
+    -webkit-animation-timing-function: ease-out
+    animation-timing-function: ease-out
+
+  50%
+    -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg)
+    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg)
+    -webkit-animation-timing-function: ease-in
+    animation-timing-function: ease-in
+
+  80%
+    -webkit-transform: perspective(400px) scale3d(.5, .5, .5)
+    transform: perspective(400px) scale3d(.5, .5, .5)
+    -webkit-animation-timing-function: ease-in
+    animation-timing-function: ease-in
+
+  100%
+    -webkit-transform: perspective(400px)
+    transform: perspective(400px)
+    -webkit-animation-timing-function: ease-in
+    animation-timing-function: ease-in
+
+
 
 *
   padding: 0
@@ -941,6 +981,8 @@ footer
       background-color: $second-dop-color
       transition: all 1s ease-in-out 0s
 
+
+
 /*page stock 100hrn for kg*/
 
 .stock_100hrn_kg
@@ -1067,6 +1109,30 @@ footer
 
 /*programs*/
 .program_description
+  .basket_programs
+    a
+      text-decoration: none
+      &:after
+        content: "\f07a"
+        display: inline-block
+        font-family: Font Awesome\ 5 Free
+        font-weight: 900
+        font-size: 35px
+        line-height: 65px
+        width: 86px
+        color: #fff
+        border-left: 2px solid $font-color
+        text-align: center
+        background-color: $first-dop-color
+        position: fixed
+        right: 0
+        top: 40%
+        transition: all 1s ease-in-out
+      &:hover:after
+        background-color: $second-dop-color
+        transition: all 1s ease-in-out
+        animation: flip 3s
+
   img
     display: inline-block
     width: 100%
@@ -1086,11 +1152,10 @@ footer
           border-bottom: 2px solid $first-dop-color
           margin-bottom: 5px
 
-          h5
-            @extend %h5_for_program_page
+          h4
+            @extend %h4_for_program_page
 
           p
-            //margin-bottom:
             &:nth-child(odd)
               color: $first-dop-color
               font-weight: 600
@@ -1101,10 +1166,11 @@ footer
           font-size: 14px
           max-width: 140px
           margin-bottom: $dop-size
+
     .btn
       border: 0
       border-radius: 0
-      padding: 0 47px 0 37px
+      padding: 0 57px 0 47px
       line-height: 44px
 
     .btn-primary
@@ -1114,6 +1180,7 @@ footer
 
     .dropdown-toggle
       position: relative
+
       &:after
         content: "\f107"
         display: inline-block
@@ -1148,6 +1215,108 @@ footer
       &:hover
         background-color: $second-dop-color
         transition: all 1s ease-in-out 0s
+
+
+  .program_information
+    margin-top: 35px
+    h3
+      @extend %program_name
+      margin-bottom: $dop-size
+      font-weight: 600
+      text-transform: inherit
+
+    p
+      margin-bottom: 10px
+
+    ul
+      font-family: $main-font
+      color: $first-dop-color
+      padding-left: 35px
+      margin-bottom: $dop-size
+
+      li
+        margin-bottom: 5px
+        &:last-of-type
+          margin-bottom: 50px
+        span
+          font-family: $main-font
+          color: $font-color
+
+    .menu
+      .time
+        border-bottom: 2px solid $font-color
+        margin-bottom: 5px
+
+        h5
+          @extend %h5_for_programs
+        p
+          margin-bottom: 5px
+
+      .recipe
+        margin-bottom: 30px
+        &:last-of-type
+          margin-bottom: 150px
+
+      .ui-tabs .ui-tabs-nav
+        padding: 0
+
+      .ui-widget.ui-widget-content
+        border: 0
+        border-radius: 0
+
+      .ui-widget-content
+        color: $font-color
+
+      .ui-widget
+        font-family: $main-font
+
+      .ui-tabs
+        padding: 0
+
+      .ui-widget-header
+        border: 0
+        background: transparent
+
+      .ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor, .ui-tabs .ui-tabs-nav li.ui-state-disabled .ui-tabs-anchor, .ui-tabs .ui-tabs-nav li.ui-tabs-loading .ui-tabs-anchor
+        color: $second-dop-color
+
+      .ui-tabs .ui-tabs-nav .ui-tabs-anchor
+        padding: 0 10px
+        float: inherit
+
+      .ui-tabs-anchor
+        outline: none
+
+      //#tabs
+      //  ul
+      //    margin-bottom: 20px
+
+      .ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited, a.ui-button, a:link.ui-button, a:visited.ui-button, .ui-button
+        color: $font-color
+
+      .ui-tabs
+        .ui-tabs-nav
+          li
+            margin: 0
+
+      .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active
+        border: 0
+        background: transparent
+        color: $font-color
+        font-weight: 600
+
+      .ui-tabs .ui-tabs-panel
+        padding: 0
+
+
+
+
+
+
+
+
+
+
 
 
 

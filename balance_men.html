@@ -11,14 +11,17 @@
           rel="stylesheet">
     <link rel="stylesheet" href="fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://resources/demos/style.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <script type="text/javascript"
-            src="https://code.jquery.com/jquery-3.4.1.min.js"
-            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#tabs").tabs();
+        });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
             integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
             crossorigin="anonymous"></script>
@@ -76,121 +79,356 @@
             <div class="col-md-12">
                 <div class="row">
                     <div class="d-md-flex align-items-md-center">
-                    <div class="col-md-6">
-                        <img src="images/prgrm_1_07.jpg" alt="food">
-                    </div>
-                    <div class="col-md-6 price">
-                        <div class="program_name text-center">
-                            <span>Програма “Баланс”</span>
-                            <span>для чоловіків</span>
+                        <div class="col-md-6 wow slideInLeft">
+                            <img src="images/prgrm_1_07.jpg" alt="food">
                         </div>
-                        <div class="main_cost_block d-md-flex justify-content-md-around">
-                            <div class="cost ">
-                                <div class="value d-flex align-items-center">
-                                    <h5>550</h5>
-                                    <div>
-                                        <p>грн</p>
-                                        <p>день</p>
+                        <div class="col-md-6 price wow slideInRight">
+                            <div class="program_name text-center">
+                                <span>Програма “Баланс”</span>
+                                <span>для чоловіків</span>
+                            </div>
+                            <div class="main_cost_block d-md-flex justify-content-md-around">
+                                <div class="cost ">
+                                    <div class="value d-flex align-items-center">
+                                        <h4>550</h4>
+                                        <div>
+                                            <p>грн</p>
+                                            <p>день</p>
+                                        </div>
+                                    </div>
+                                    <span>При першому замовленні на 3 дні</span>
+                                </div>
+                                <div class="cost ">
+                                    <div class="value d-flex align-items-center">
+                                        <h4>600</h4>
+                                        <div>
+                                            <p>грн</p>
+                                            <p>день</p>
+                                        </div>
+                                    </div>
+                                    <span>При замовленні на тиждень</span>
+                                </div>
+                            </div>
+                            <div class="main_cost_block d-md-flex justify-content-md-around">
+                                <div class="cost ">
+                                    <div class="value d-flex align-items-center">
+                                        <h4>580</h4>
+                                        <div>
+                                            <p>грн</p>
+                                            <p>день</p>
+                                        </div>
+                                    </div>
+                                    <span>При замовленні на 2 тижні</span>
+                                </div>
+                                <div class="cost">
+                                    <div class="value d-flex align-items-center">
+                                        <h4>550</h4>
+                                        <div>
+                                            <p>грн</p>
+                                            <p>день</p>
+                                        </div>
+                                    </div>
+                                    <span>При замовленні на 30 днів</span>
+                                </div>
+                            </div>
+                            <form action="" method="post" class="d-flex justify-content-around">
+                                <div class="dropdown">
+                                    <button type="button" class="btn btn-primary dropdown-toggle"
+                                            data-toggle="dropdown">
+                                        Обрати раціон
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Пробне меню</a>
+                                        <a class="dropdown-item" href="#">Поденне меню</a>
+                                        <a class="dropdown-item" href="#">Тижневе меню</a>
+                                        <a class="dropdown-item" href="#">Двотижневе меню</a>
+                                        <a class="dropdown-item" href="#">Місячне меню</a>
                                     </div>
                                 </div>
-                                <span>При першому замовленні на 3 дні</span>
-                            </div>
-                            <div class="cost ">
-                                <div class="value d-flex align-items-center">
-                                    <h5>600</h5>
-                                    <div>
-                                        <p>грн</p>
-                                        <p>день</p>
-                                    </div>
-                                </div>
-                                <span>При замовленні на тиждень</span>
-                            </div>
-                        </div>
-                        <div class="main_cost_block d-md-flex justify-content-md-around">
-                            <div class="cost ">
-                                <div class="value d-flex align-items-center">
-                                    <h5>580</h5>
-                                    <div>
-                                        <p>грн</p>
-                                        <p>день</p>
-                                    </div>
-                                </div>
-                                <span>При замовленні на 2 тижні</span>
-                            </div>
-                            <div class="cost">
-                                <div class="value d-flex align-items-center">
-                                    <h5>550</h5>
-                                    <div>
-                                        <p>грн</p>
-                                        <p>день</p>
-                                    </div>
-                                </div>
-                                <span>При замовленні на 30 днів</span>
-                            </div>
-                        </div>
-                        <form action="" method="post" class="d-flex justify-content-around">
-                            <div class="dropdown">
-                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                                    Обрати раціон
-                                </button>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">Пробне меню</a>
-                                    <a class="dropdown-item" href="#">Поденне меню</a>
-                                    <a class="dropdown-item" href="#">Тижневе меню</a>
-                                    <a class="dropdown-item" href="#">Двотижневе меню</a>
-                                    <a class="dropdown-item" href="#">Місячне меню</a>
-                                </div>
-                            </div>
-                            <button type="submit" class="order_program_page">Замовити</button>
-                        </form>
+                                <button type="submit" class="order_program_page">Замовити</button>
+                            </form>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="program_information">
+            <h3 class="wow slideInLeft">Програма “Баланс” для чоловіків, які прагнуть бути у формі</h3>
+            <p class="wow slideInRight">Калорійність: 1900-2200 ккал</p>
+            <p class="wow slideInLeft">Підходить для тих, хто бажає:</p>
+            <ul>
+                <li class="wow slideInRight">
+                    <span>бути здоровим та мати гарну форму</span>
+                </li>
+                <li class="wow slideInLeft">
+                    <span >втратити близько 4-10 кг</span>
+                </li>
+                <li class="wow slideInRight">
+                    <span>покращити самопочуття</span>
+                </li>
+                <li class="wow slideInLeft">
+                    <span>отримати рекомендації щодо пітримання форми після досягнення результату</span>
+                </li>
+                <li class="wow slideInRight">
+                    <span>не обмежувати себе в різноманітності харчування</span>
+                </li>
+                <li class="wow slideInLeft">
+                    <span>мати індивідульний гнучкий графік доставки та харчування</span>
+                </li>
+            </ul>
+            <h3 class="text-center wow slideInRight">Приклад меню на тиждень</h3>
+            <div class="row">
+                <div class="col-md-10 offset-md-1 wow slideInLeft">
+                    <div class="menu">
+                        <div id="tabs">
+                            <ul class="d-flex justify-content-center">
+                                <li><a href="#tabs-1">Понеділок</a></li>
+                                <li><a href="#tabs-2">Вівторок</a></li>
+                                <li><a href="#tabs-3">Середа</a></li>
+                                <li><a href="#tabs-4">Четвер</a></li>
+                                <li><a href="#tabs-5">П'ятниця</a></li>
+                                <li><a href="#tabs-6">Субота</a></li>
+                                <li><a href="#tabs-7">Неділя</a></li>
+                            </ul>
+                            <div id="tabs-1">
+                            <div class="time d-flex  justify-content-between">
+                                <h5>СНІДАНОК</h5>
+                                <p>7:00 - 9:00</p>
+                            </div>
+                            <p class="recipe">Тортілья з курячим філе та овочами (огірок, помідор, стручкова квасоля)</p>
+                            <div class="time d-flex justify-content-between">
+                                <h5>ДРУГИЙ СНІДАНОК</h5>
+                                <p>9:30 - 11:00</p>
+                            </div>
+                            <p class="recipe">Сирні крокети з вишнею</p>
+                            <div class="time d-flex justify-content-between">
+                                <h5>ОБІД</h5>
+                                <p>11:30 - 14:00</p>
+                            </div>
+                            <p class="recipe">Запечене курча з овочами та рисом</p>
+                            <div class="time d-flex justify-content-between">
+                                <h5>ПОЛУДЕНОК</h5>
+                                <p>14:30 - 17:00</p>
+                            </div>
+                            <p class="recipe">Салат “Цезар” з індичкою та легкою заправкою. Суп із лососем та шпінатом<</p>
+                            <div class="time d-flex justify-content-between">
+                                <h5>ВЕЧЕРЯ</h5>
+                                <p>17:30 - 19:00</p>
+                            </div>
+                            <p class="recipe">Індичка запечена з томатами та сиром сулугуні</p>
+                        </div>
+                            <div id="tabs-2">
+                                <div class="time d-flex  justify-content-between">
+                                    <h5>СНІДАНОК</h5>
+                                    <p>7:00 - 9:00</p>
+                                </div>
+                                <p class="recipe">Вівсянка з бананом та горіхами</p>
+                                <div class="time d-flex justify-content-between">
+                                    <h5>ДРУГИЙ СНІДАНОК</h5>
+                                    <p>9:30 - 11:00</p>
+                                </div>
+                                <p class="recipe">Печене яблуко з корицею </p>
+                                <div class="time d-flex justify-content-between">
+                                    <h5>ОБІД</h5>
+                                    <p>11:30 - 14:00</p>
+                                </div>
+                                <p class="recipe">Булгур з яловичиною та грибами з салатом ( зелений горошок, твердий сир, руккола, помідор)</p>
+                                <div class="time d-flex justify-content-between">
+                                    <h5>ПОЛУДЕНОК</h5>
+                                    <p>14:30 - 17:00</p>
+                                </div>
+                                <p class="recipe">Брускета з помідорами</p>
+                                <div class="time d-flex justify-content-between">
+                                    <h5>ВЕЧЕРЯ</h5>
+                                    <p>17:30 - 19:00</p>
+                                </div>
+                                <p class="recipe">Печена куряча грудка з базиликом та авокадо</p>
+                            </div>
+                            <div id="tabs-3">
+                                <div class="time d-flex  justify-content-between">
+                                    <h5>СНІДАНОК</h5>
+                                    <p>7:00 - 9:00</p>
+                                </div>
+                                <p class="recipe">Теплий сендвіч з індичкою, томатом та листям салату</p>
+                                <div class="time d-flex justify-content-between">
+                                    <h5>ДРУГИЙ СНІДАНОК</h5>
+                                    <p>9:30 - 11:00</p>
+                                </div>
+                                <p class="recipe">Сирний кекс із малиною, горстка горіхів кеш’ю </p>
+                                <div class="time d-flex justify-content-between">
+                                    <h5>ОБІД</h5>
+                                    <p>11:30 - 14:00</p>
+                                </div>
+                                <p class="recipe">Медово-лимонна куряча грудка з кус-кусом та запеченим баклажаном і сиром Моцарелла</p>
+                                <div class="time d-flex justify-content-between">
+                                    <h5>ПОЛУДЕНОК</h5>
+                                    <p>14:30 - 17:00</p>
+                                </div>
+                                <p class="recipe">Лаваш з рікотою та овочами</p>
+                                <div class="time d-flex justify-content-between">
+                                    <h5>ВЕЧЕРЯ</h5>
+                                    <p>17:30 - 19:00</p>
+                                </div>
+                                <p class="recipe">Запечена яловичина з броколі та стручковою квасолею</p>
+                            </div>
+                            <div id="tabs-4">
+                                <div class="time d-flex  justify-content-between">
+                                    <h5>СНІДАНОК</h5>
+                                    <p>7:00 - 9:00</p>
+                                </div>
+                                <p class="recipe">Вівсяно-ржані оладки з кленовим сиропом</p>
+                                <div class="time d-flex justify-content-between">
+                                    <h5>ДРУГИЙ СНІДАНОК</h5>
+                                    <p>9:30 - 11:00</p>
+                                </div>
+                                <p class="recipe">Пудинг  з чіа та персиковим пюре </p>
+                                <div class="time d-flex justify-content-between">
+                                    <h5>ОБІД</h5>
+                                    <p>11:30 - 14:00</p>
+                                </div>
+                                <p class="recipe">Запечений мінтай із булгуром у томаті та овочевим салатом</p>
+                                <div class="time d-flex justify-content-between">
+                                    <h5>ПОЛУДЕНОК</h5>
+                                    <p>14:30 - 17:00</p>
+                                </div>
+                                <p class="recipe">Салат з авокадо, кальмарами та руколою</p>
+                                <div class="time d-flex justify-content-between">
+                                    <h5>ВЕЧЕРЯ</h5>
+                                    <p>17:30 - 19:00</p>
+                                </div>
+                                <p class="recipe">Листковий пиріг з кабачками, телятиною та сиром Моцарелла</p>
+                            </div>
+                            <div id="tabs-5">
+                                <div class="time d-flex  justify-content-between">
+                                    <h5>СНІДАНОК</h5>
+                                    <p>7:00 - 9:00</p>
+                                </div>
+                                <p class="recipe">Омлет із томатами чері та тост із сиром</p>
+                                <div class="time d-flex justify-content-between">
+                                    <h5>ДРУГИЙ СНІДАНОК</h5>
+                                    <p>9:30 - 11:00</p>
+                                </div>
+                                <p class="recipe">Чизкейк з бананом та ожиною</p>
+                                <div class="time d-flex justify-content-between">
+                                    <h5>ОБІД</h5>
+                                    <p>11:30 - 14:00</p>
+                                </div>
+                                <p class="recipe">Рис із морепродуктами та  з баклажанно-сирним рулетом </p>
+                                <div class="time d-flex justify-content-between">
+                                    <h5>ПОЛУДЕНОК</h5>
+                                    <p>14:30 - 17:00</p>
+                                </div>
+                                <p class="recipe">Тост з сиром Фета та томатом</p>
+                                <div class="time d-flex justify-content-between">
+                                    <h5>ВЕЧЕРЯ</h5>
+                                    <p>17:30 - 19:00</p>
+                                </div>
+                                <p class="recipe">Запечена форель із овочевим салатом</p>
+                            </div>
+                            <div id="tabs-6">
+                                <div class="time d-flex  justify-content-between">
+                                    <h5>СНІДАНОК</h5>
+                                    <p>7:00 - 9:00</p>
+                                </div>
+                                <p class="recipe">Млинці з сиром Тофу та слаболеним лососем</p>
+                                <div class="time d-flex justify-content-between">
+                                    <h5>ДРУГИЙ СНІДАНОК</h5>
+                                    <p>9:30 - 11:00</p>
+                                </div>
+                                <p class="recipe">Круасан  з бананом та арахісовою пастою</p>
+                                <div class="time d-flex justify-content-between">
+                                    <h5>ОБІД</h5>
+                                    <p>11:30 - 14:00</p>
+                                </div>
+                                <p class="recipe">Паста з телятиною, томатами та грибами з салатом із запечених овочів</p>
+                                <div class="time d-flex justify-content-between">
+                                    <h5>ПОЛУДЕНОК</h5>
+                                    <p>14:30 - 17:00</p>
+                                </div>
+                                <p class="recipe">Тост із авокадо та помідором </p>
+                                <div class="time d-flex justify-content-between">
+                                    <h5>ВЕЧЕРЯ</h5>
+                                    <p>17:30 - 19:00</p>
+                                </div>
+                                <p class="recipe">Омлет із броколі</p>
+                            </div>
+                            <div id="tabs-7">
+                                <div class="time d-flex  justify-content-between">
+                                    <h5>СНІДАНОК</h5>
+                                    <p>7:00 - 9:00</p>
+                                </div>
+                                <p class="recipe">Сирники з арахісовою пастою</p>
+                                <div class="time d-flex justify-content-between">
+                                    <h5>ДРУГИЙ СНІДАНОК</h5>
+                                    <p>9:30 - 11:00</p>
+                                </div>
+                                <p class="recipe">Тортілья з індичкою , сиром Тофу та овочами</p>
+                                <div class="time d-flex justify-content-between">
+                                    <h5>ОБІД</h5>
+                                    <p>11:30 - 14:00</p>
+                                </div>
+                                <p class="recipe">Сирний суп з тостами, запечена скумбрія </p>
+                                <div class="time d-flex justify-content-between">
+                                    <h5>ПОЛУДЕНОК</h5>
+                                    <p>14:30 - 17:00</p>
+                                </div>
+                                <p class="recipe">Сир з грецьким йогуртом та полуницею</p>
+                                <div class="time d-flex justify-content-between">
+                                    <h5>ВЕЧЕРЯ</h5>
+                                    <p>17:30 - 19:00</p>
+                                </div>
+                                <p class="recipe">Салат sз тунцем</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="basket_programs">
+        <a href="basket.html"></a>
+    </div>
 </section>
-<!--<footer>-->
-<!--    <div class="container">-->
-<!--        <div class="d-lg-flex wow slideInUp">-->
-<!--            <div class="footer_form  text-center">-->
-<!--                <h4>Будь у курсі!</h4>-->
-<!--                <p>Підпишись на поради від нашого дієтолога</p>-->
-<!--                <form action="" method="post">-->
-<!--                    <input type="email" placeholder="Ваш e-mail" class="form-control-file">-->
-<!--                    <button type="submit" class="form-control-file">ПІДПИСАТИСЯ</button>-->
-<!--                </form>-->
-<!--            </div>-->
-<!--            <div class="d-md-flex">-->
-<!--                <div class="social">-->
-<!--                    <h4>Напишіть нам</h4>-->
-<!--                    <div class="write_to_us">-->
-<!--                        <a href="#" target="_blank" name="viber"></a>-->
-<!--                        <a href="#" target="_blank" name="telegram"></a>-->
-<!--                        <a href="#" target="_blank" name="watsapp"></a>-->
-<!--                    </div>-->
-<!--                    <h4>Соц мережі</h4>-->
-<!--                    <div class="soc">-->
-<!--                        <a href="#" target="_blank" name="instagram"></a>-->
-<!--                        <a href="#" target="_blank" name="facebook"></a>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="contacts">-->
-<!--                    <h4>Контакти:</h4>-->
-<!--                    <p>@healthyfood@uk.net</p>-->
-<!--                    <p>+38 (095) 17 00 117</p>-->
-<!--                    <p> +38 (063) 15 990 75</p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</footer>-->
-<!--<section class="down_footer">-->
-<!--    <div class="container">-->
-<!--        <p class="wow slideInDown"> © 2020 | HealthyFood | Website Template designed by Taratkevych Hanna</p>-->
-<!--        <a href="#"></a>-->
-<!--    </div>-->
-<!--</section>-->
+<footer>
+    <div class="container">
+        <div class="d-lg-flex wow slideInUp">
+            <div class="footer_form  text-center">
+                <h4>Будь у курсі!</h4>
+                <p>Підпишись на поради від нашого дієтолога</p>
+                <form action="" method="post">
+                    <input type="email" placeholder="Ваш e-mail" class="form-control-file">
+                    <button type="submit" class="form-control-file">ПІДПИСАТИСЯ</button>
+                </form>
+            </div>
+            <div class="d-md-flex">
+                <div class="social">
+                    <h4>Напишіть нам</h4>
+                    <div class="write_to_us">
+                        <a href="#" target="_blank" name="viber"></a>
+                        <a href="#" target="_blank" name="telegram"></a>
+                        <a href="#" target="_blank" name="watsapp"></a>
+                    </div>
+                    <h4>Соц мережі</h4>
+                    <div class="soc">
+                        <a href="#" target="_blank" name="instagram"></a>
+                        <a href="#" target="_blank" name="facebook"></a>
+                    </div>
+                </div>
+                <div class="contacts">
+                    <h4>Контакти:</h4>
+                    <p>@healthyfood@uk.net</p>
+                    <p>+38 (095) 17 00 117</p>
+                    <p> +38 (063) 15 990 75</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<section class="down_footer">
+    <div class="container">
+        <p class="wow slideInDown"> © 2020 | HealthyFood | Website Template designed by Taratkevych Hanna</p>
+        <a href="#"></a>
+    </div>
+</section>
 </body>
 </html>
