@@ -432,7 +432,8 @@ p {
 .orders .btn-primary:not(:disabled):not(.disabled).active, .orders .btn-primary:not(:disabled):not(.disabled):active, .orders .show > .btn-primary.dropdown-toggle {
   color: #fff;
   border: 0 !important;
-  background-color: #43d283 !important; }
+  background-color: #43d283 !important;
+  outline: 0; }
 .orders .dropdown-toggle {
   position: relative; }
   .orders .dropdown-toggle:after {
@@ -905,8 +906,8 @@ footer {
     font-family: Font Awesome\ 5 Free;
     font-weight: 900;
     font-size: 35px;
-    line-height: 65px;
-    width: 86px;
+    line-height: 55px;
+    width: 75px;
     color: #fff;
     border-left: 2px solid #2b2c2c;
     text-align: center;
@@ -915,6 +916,11 @@ footer {
     right: 0;
     top: 40%;
     transition: all 1s ease-in-out; }
+    @media screen and (max-width: 414px) {
+      .program_description .basket_programs a:after {
+        line-height: 40px;
+        width: 55px;
+        font-size: 1.25rem; } }
   .program_description .basket_programs a:hover:after {
     background-color: #ff9649;
     transition: all 1s ease-in-out;
@@ -924,10 +930,18 @@ footer {
   width: 100%; }
 .program_description .price .program_name span:first-of-type {
   font-weight: 600; }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .program_description .price .program_name span {
+    font-size: 16px;
+    margin-bottom: 8px; } }
 .program_description .price .main_cost_block .cost .value {
   padding-bottom: 5px;
   border-bottom: 2px solid #43d283;
   margin-bottom: 5px; }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .program_description .price .main_cost_block .cost .value {
+      margin-bottom: 3px;
+      padding-bottom: 3px; } }
   .program_description .price .main_cost_block .cost .value p:nth-child(odd) {
     color: #43d283;
     font-weight: 600;
@@ -937,11 +951,22 @@ footer {
   font-size: 14px;
   max-width: 140px;
   margin-bottom: 1.25rem; }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .program_description .price .main_cost_block .cost span {
+      margin-bottom: 14px; } }
 .program_description .price .btn {
   border: 0;
   border-radius: 0;
   padding: 0 57px 0 47px;
   line-height: 44px; }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .program_description .price .btn {
+      padding: 0 47px 0 37px; } }
+  @media screen and (max-width: 414px) {
+    .program_description .price .btn {
+      display: block;
+      width: 100%;
+      margin-bottom: 1.25rem; } }
 .program_description .price .btn-primary {
   background-color: transparent;
   border: 1px solid #2b2c2c;
@@ -961,10 +986,11 @@ footer {
 .program_description .price .btn-primary:not(:disabled):not(.disabled).active, .program_description .price .btn-primary:not(:disabled):not(.disabled):active, .program_description .price .show > .btn-primary.dropdown-toggle {
   color: #fff;
   border: 0 !important;
-  background-color: #43d283 !important; }
+  background-color: #43d283 !important;
+  outline: 0; }
 .program_description .price .dropdown-item {
   color: #2b2c2c;
-  padding: 0.2rem 1.1rem 0.2rem 1rem;
+  padding: 0.2rem 2.2rem 0.2rem 1rem;
   font-family: "Montserrat", sans-serif; }
 .program_description .price .order_program_page {
   display: inline-block;
@@ -976,9 +1002,17 @@ footer {
   color: #fff;
   border: 0;
   transition: all 1s ease-in-out 0s; }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .program_description .price .order_program_page {
+      margin-left: 10px; } }
   .program_description .price .order_program_page:hover {
     background-color: #ff9649;
     transition: all 1s ease-in-out 0s; }
+  @media screen and (max-width: 414px) {
+    .program_description .price .order_program_page {
+      display: block;
+      width: 100%;
+      margin-bottom: 1.25rem; } }
 .program_description .program_information {
   margin-top: 35px; }
   .program_description .program_information h3 {
@@ -1027,10 +1061,16 @@ footer {
   .program_description .program_information .menu .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
     padding: 0 10px;
     float: inherit; }
+    @media screen and (max-width: 360px) {
+      .program_description .program_information .menu .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+        padding: 3px 7px; } }
   .program_description .program_information .menu .ui-tabs-anchor {
     outline: none; }
   .program_description .program_information .menu .ui-state-default a, .program_description .program_information .menu .ui-state-default a:link, .program_description .program_information .menu .ui-state-default a:visited, .program_description .program_information .menu a.ui-button, .program_description .program_information .menu a:link.ui-button, .program_description .program_information .menu a:visited.ui-button, .program_description .program_information .menu .ui-button {
     color: #2b2c2c; }
+    @media screen and (max-width: 360px) {
+      .program_description .program_information .menu .ui-state-default a, .program_description .program_information .menu .ui-state-default a:link, .program_description .program_information .menu .ui-state-default a:visited, .program_description .program_information .menu a.ui-button, .program_description .program_information .menu a:link.ui-button, .program_description .program_information .menu a:visited.ui-button, .program_description .program_information .menu .ui-button {
+        font-size: 14px; } }
   .program_description .program_information .menu .ui-tabs .ui-tabs-nav li {
     margin: 0; }
   .program_description .program_information .menu .ui-state-default, .program_description .program_information .menu .ui-widget-content .ui-state-default, .program_description .program_information .menu .ui-widget-header .ui-state-default, .program_description .program_information .menu .ui-button, .program_description .program_information .menu html .ui-button.ui-state-disabled:hover, .program_description .program_information .menu html .ui-button.ui-state-disabled:active {

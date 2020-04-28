@@ -378,7 +378,6 @@ p
       @include max-screen(768px)
         padding: 10px 0 10px 10px
 
-
       &:hover .programs_button
         display: block
 
@@ -410,7 +409,6 @@ p
 
         @include max-screen(768px)
           display: none
-
 
       .programs_button
         display: none
@@ -516,6 +514,7 @@ p
     color: #fff
     border: 0 !important
     background-color: $first-dop-color !important
+    outline: 0
 
   .dropdown-toggle
     position: relative
@@ -531,7 +530,6 @@ p
       position: absolute
       right: $dop-size
 
-
   .btn
     display: inline-block
     width: 100%
@@ -542,11 +540,9 @@ p
     line-height: 3.125rem
     transition: all 1s ease-in-out 0s
 
-
   .dropdown-menu.show
     width: 100%
     box-sizing: border-box
-
 
   .dropdown-menu
     margin: 0
@@ -629,7 +625,6 @@ p
         width: 100%
         margin-bottom: 100px
 
-
 .stock
   margin-bottom: 4.375rem
 
@@ -698,7 +693,6 @@ p
           font-size: 0.75rem
         @include max-screen(375px)
           font-size: 0.65rem
-
 
         &:hover
           color: $first-dop-color
@@ -877,7 +871,6 @@ footer
           font-size: 2.188rem
           color: $first-dop-color
           margin: 0 .25rem
-
 
         &:nth-child(2):before
           content: "\f2c6"
@@ -1118,8 +1111,8 @@ footer
         font-family: Font Awesome\ 5 Free
         font-weight: 900
         font-size: 35px
-        line-height: 65px
-        width: 86px
+        line-height: 55px
+        width: 75px
         color: #fff
         border-left: 2px solid $font-color
         text-align: center
@@ -1128,6 +1121,10 @@ footer
         right: 0
         top: 40%
         transition: all 1s ease-in-out
+        @include max-screen(414px)
+          line-height: 40px
+          width: 55px
+          font-size: $dop-size
       &:hover:after
         background-color: $second-dop-color
         transition: all 1s ease-in-out
@@ -1145,12 +1142,20 @@ footer
         &:first-of-type
           font-weight: 600
 
+        @media screen and (min-width: 768px) and (max-width: 1024px)
+          font-size: 16px
+          margin-bottom: 8px
+
+
     .main_cost_block
       .cost
         .value
           padding-bottom: 5px
           border-bottom: 2px solid $first-dop-color
           margin-bottom: 5px
+          @media screen and (min-width: 768px) and (max-width: 1024px)
+            margin-bottom: 3px
+            padding-bottom: 3px
 
           h4
             @extend %h4_for_program_page
@@ -1166,12 +1171,22 @@ footer
           font-size: 14px
           max-width: 140px
           margin-bottom: $dop-size
+          @media screen and (min-width: 768px) and (max-width: 1024px)
+            margin-bottom: 14px
 
     .btn
       border: 0
       border-radius: 0
       padding: 0 57px 0 47px
       line-height: 44px
+      @media screen and (min-width: 768px) and (max-width: 1024px)
+        padding: 0 47px 0 37px
+
+      @include max-screen(414px)
+        display: block
+        width: 100%
+        margin-bottom: $dop-size
+
 
     .btn-primary
       background-color: transparent
@@ -1196,10 +1211,11 @@ footer
       color: #fff
       border: 0 !important
       background-color: $first-dop-color !important
+      outline: 0
 
     .dropdown-item
       color: $font-color
-      padding: 0.2rem 1.1rem 0.2rem 1rem
+      padding: 0.2rem 2.2rem 0.2rem 1rem
       font-family: $main-font
 
     .order_program_page
@@ -1212,9 +1228,16 @@ footer
       color: #fff
       border: 0
       transition: all 1s ease-in-out 0s
+      @media screen and (min-width: 768px) and (max-width: 1024px)
+        margin-left: 10px
       &:hover
         background-color: $second-dop-color
         transition: all 1s ease-in-out 0s
+
+      @include max-screen(414px)
+        display: block
+        width: 100%
+        margin-bottom: $dop-size
 
 
   .program_information
@@ -1224,6 +1247,8 @@ footer
       margin-bottom: $dop-size
       font-weight: 600
       text-transform: inherit
+      @include max-screen(320px)
+
 
     p
       margin-bottom: 10px
@@ -1251,6 +1276,7 @@ footer
           @extend %h5_for_programs
         p
           margin-bottom: 5px
+
 
       .recipe
         margin-bottom: 30px
@@ -1283,16 +1309,16 @@ footer
       .ui-tabs .ui-tabs-nav .ui-tabs-anchor
         padding: 0 10px
         float: inherit
+        @include max-screen(360px)
+          padding: 3px 7px
 
       .ui-tabs-anchor
         outline: none
 
-      //#tabs
-      //  ul
-      //    margin-bottom: 20px
-
       .ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited, a.ui-button, a:link.ui-button, a:visited.ui-button, .ui-button
         color: $font-color
+        @include max-screen(360px)
+          font-size: 14px
 
       .ui-tabs
         .ui-tabs-nav
