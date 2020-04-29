@@ -24,7 +24,7 @@
   font-size: 1.25rem;
   margin-bottom: 12px; }
 
-.program_description .price .main_cost_block .cost .value h4 {
+.program_description .price .main_cost_block .cost .value h4, .program_description .price .about_program .cost .value h4 {
   font-family: "Montserrat", sans-serif;
   font-size: 38px;
   margin-right: 10px;
@@ -1080,5 +1080,16 @@ footer {
     font-weight: 600; }
   .program_description .program_information .menu .ui-tabs .ui-tabs-panel {
     padding: 0; }
+
+/*smoothie programm */
+.program_description .price .about_program p {
+  margin-bottom: 25px; }
+  .program_description .price .about_program p:last-of-type {
+    margin-bottom: 45px; }
+.program_description .price .about_program .cost .value p {
+  margin-bottom: 0; }
+  .program_description .price .about_program .cost .value p:nth-child(odd) {
+    color: #43d283;
+    font-weight: 600; }
 
 /*# sourceMappingURL=style.css.map */
