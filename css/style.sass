@@ -15,6 +15,20 @@ $third-dop-color: #e4e4e4
   @media screen and (max-width: $res)
     @content
 
+%for_button
+  display: inline-block
+  background-color: $first-dop-color
+  color: #fff
+  font-family: $main-font
+  font-weight: 600
+  text-transform: uppercase
+  border: 0
+  transition: all 1s ease-in-out
+  &:hover
+    background-color: $second-dop-color
+    transition: all 1s ease-in-out
+
+
 %for_h2
   font-family: $dop-font
   text-transform: inherit
@@ -1354,6 +1368,105 @@ footer
             &:nth-child(odd)
               color: $first-dop-color
               font-weight: 600
+
+
+/*basket*/
+
+.basket
+  width: 50%
+  height: 100vh
+  background-color: darkgrey
+  padding: 60px 90px 0 130px
+  h3
+    position: relative
+    &:before
+      content: "\f00d"
+      display: inline-block
+      font-family: Font Awesome\ 5 Free
+      font-weight: 900
+      color: $third-dop-color
+      font-size: $dop-size
+      position: absolute
+      left: -110px
+      bottom: 60px
+
+  .basket_description
+    margin-bottom: 30px
+    &:last-of-type
+      margin-bottom: 50px
+    img
+      display: inline-block
+      width: 100%
+      margin-right: 30px
+
+    p
+      font-weight: 600
+      &:last-of-type
+        margin-bottom: 50px
+
+    .count
+      span
+        font-family: $main-font
+        color: $first-dop-color
+        &:first-of-type
+          color: $third-dop-color
+        &:nth-child(2)
+          color: $font-color
+
+    span
+      font-family: $main-font
+      color: $first-dop-color
+
+    a
+      text-decoration: none
+      &:after
+        content: "\f2ed"
+        display: inline-block
+        font-family: Font Awesome\ 5 Free
+        font-weight: 400
+        font-size: $main-font-size
+        color: $third-dop-color
+
+  form
+    input
+      display: none
+    label
+      font-family: $main-font
+      color: $font-color
+      margin-bottom: 85px
+    input + label
+      &:before
+        content: "\f00c"
+        display: inline-block
+        font-family: Font Awesome\ 5 Free
+        font-weight: 900
+        width: 15px
+        line-height: 15px
+        border: 1px solid$font-color
+        margin-right: 14px
+        text-align: center
+        font-size: 12px
+        color: transparent
+
+    input:checked + label:before
+      color: $first-dop-color
+
+    p
+      margin-bottom: $dop-size
+
+    button
+      @extend %for_button
+      display: block
+      padding: 0 30px
+      line-height: 40px
+
+
+
+
+
+
+
+
 
 
 
