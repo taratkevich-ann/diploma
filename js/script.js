@@ -28,8 +28,26 @@ var close = document.getElementsByClassName("close")[0];
 
 open_basket.onclick = function () {
     basket.style.display = "block";
-}
+};
 
 close.onclick = function () {
     basket.style.display = "none";
+};
+
+/*anchors*/
+
+const anchors = document.querySelectorAll('a[href*="#"]');
+
+for (let anchor of anchors){
+    anchor.addEventListener("click", function (event) {
+        event.preventDefault();
+        const blockID = anchor.getAttribute('href');
+        document.querySelector('' + blockID).scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        })
+    })
 }
+
+
+
