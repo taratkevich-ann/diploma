@@ -24,6 +24,7 @@ $third-dop-color: #e4e4e4
   text-transform: uppercase
   border: 0
   transition: all 1s ease-in-out
+
   &:hover
     background-color: $second-dop-color
     transition: all 1s ease-in-out
@@ -112,7 +113,6 @@ $third-dop-color: #e4e4e4
     transform: perspective(400px)
     -webkit-animation-timing-function: ease-in
     animation-timing-function: ease-in
-
 
 
 *
@@ -989,7 +989,6 @@ footer
       transition: all 1s ease-in-out 0s
 
 
-
 /*page stock 100hrn for kg*/
 
 .stock_100hrn_kg
@@ -1116,9 +1115,10 @@ footer
 
 /*programs*/
 .program_description
-  .basket_programs
+  .open_basket
     a
       text-decoration: none
+
       &:after
         content: "\f07a"
         display: inline-block
@@ -1134,15 +1134,16 @@ footer
         position: fixed
         right: 0
         top: 40%
-        transition: all 1s ease-in-out
+        transition: all 500ms ease-in-out
         @include max-screen(414px)
           line-height: 40px
           width: 55px
           font-size: $dop-size
+
       &:hover:after
         background-color: $second-dop-color
-        transition: all 1s ease-in-out
-        animation: flip 3s
+        transition: all 500ms ease-in-out
+
 
   img
     display: inline-block
@@ -1244,6 +1245,7 @@ footer
       transition: all 1s ease-in-out 0s
       @media screen and (min-width: 768px) and (max-width: 1024px)
         margin-left: 10px
+
       &:hover
         background-color: $second-dop-color
         transition: all 1s ease-in-out 0s
@@ -1256,6 +1258,7 @@ footer
 
   .program_information
     margin-top: 35px
+
     h3
       @extend %program_name
       margin-bottom: $dop-size
@@ -1275,8 +1278,10 @@ footer
 
       li
         margin-bottom: 5px
+
         &:last-of-type
           margin-bottom: 50px
+
         span
           font-family: $main-font
           color: $font-color
@@ -1288,12 +1293,14 @@ footer
 
         h5
           @extend %h5_for_programs
+
         p
           margin-bottom: 5px
 
 
       .recipe
         margin-bottom: 30px
+
         &:last-of-type
           margin-bottom: 150px
 
@@ -1349,12 +1356,13 @@ footer
         padding: 0
 
 
-/*smoothie programm*/
+/*smoothie program*/
 .program_description
   .price
     .about_program
       p
         margin-bottom: 25px
+
         &:last-of-type
           margin-bottom: 45px
 
@@ -1365,6 +1373,7 @@ footer
 
           p
             margin-bottom: 0
+
             &:nth-child(odd)
               color: $first-dop-color
               font-weight: 600
@@ -1373,92 +1382,148 @@ footer
 /*basket*/
 
 .basket
-  width: 50%
-  height: 100vh
-  background-color: darkgrey
-  padding: 60px 90px 0 130px
-  h3
-    position: relative
-    &:before
-      content: "\f00d"
-      display: inline-block
-      font-family: Font Awesome\ 5 Free
-      font-weight: 900
-      color: $third-dop-color
-      font-size: $dop-size
-      position: absolute
-      left: -110px
-      bottom: 60px
+  background-color: rgba(0, 0, 0, .5)
+  position: fixed
+  z-index: 4
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  overflow: auto
+  display: none
 
-  .basket_description
-    margin-bottom: 30px
-    &:last-of-type
-      margin-bottom: 50px
-    img
-      display: inline-block
+  .basket_content
+    width: 50%
+    min-height: 100vh
+    background-color: #fff
+    padding: 60px 90px 0 130px
+    @include max-screen(1024px)
+      width: 75%
+    @include max-screen(768px)
       width: 100%
-      margin-right: 30px
+    @include max-screen(414px)
+      width: 100%
+      padding: 60px
+    @include max-screen(360px)
+      padding: 30px 20px
 
-    p
-      font-weight: 600
+    h3
+      position: relative
+      left: -15px
+
+    .close
+      a
+        text-decoration: none
+
+        &:before
+          content: "\f00d"
+          display: inline-block
+          font-family: Font Awesome\ 5 Free
+          font-weight: 900
+          color: black
+          font-size: $dop-size
+          position: relative
+          left: -90px
+          bottom: 40px
+          @include max-screen(414px)
+            left: -35px
+          @include max-screen(360px)
+            left: -11px
+            bottom: 22px
+
+    .basket_description
+      margin-bottom: 30px
+
       &:last-of-type
         margin-bottom: 50px
 
-    .count
+      img
+        display: inline-block
+        width: 100%
+        margin-right: 30px
+
+      p
+        font-weight: 600
+
+        &:last-of-type
+          margin-bottom: 50px
+
+        @include max-screen(375px)
+          font-size: 14px
+
+      .count
+        span
+          font-family: $main-font
+          color: $first-dop-color
+
+          &:first-of-type
+            color: $third-dop-color
+
+          &:nth-child(2)
+            color: $font-color
+
       span
         font-family: $main-font
         color: $first-dop-color
-        &:first-of-type
+
+      a
+        text-decoration: none
+
+        &:after
+          content: "\f2ed"
+          display: inline-block
+          font-family: Font Awesome\ 5 Free
+          font-weight: 400
+          font-size: $main-font-size
           color: $third-dop-color
-        &:nth-child(2)
-          color: $font-color
 
-    span
-      font-family: $main-font
-      color: $first-dop-color
+    form
+      input
+        display: none
 
-    a
-      text-decoration: none
-      &:after
-        content: "\f2ed"
-        display: inline-block
-        font-family: Font Awesome\ 5 Free
-        font-weight: 400
-        font-size: $main-font-size
-        color: $third-dop-color
+      label
+        font-family: $main-font
+        color: $font-color
+        margin-bottom: 85px
 
-  form
-    input
-      display: none
-    label
-      font-family: $main-font
-      color: $font-color
-      margin-bottom: 85px
-    input + label
-      &:before
-        content: "\f00c"
-        display: inline-block
-        font-family: Font Awesome\ 5 Free
-        font-weight: 900
-        width: 15px
-        line-height: 15px
-        border: 1px solid$font-color
-        margin-right: 14px
-        text-align: center
-        font-size: 12px
-        color: transparent
+      input + label
+        &:before
+          content: "\f00c"
+          display: inline-block
+          font-family: Font Awesome\ 5 Free
+          font-weight: 900
+          width: 15px
+          line-height: 15px
+          border: 1px solid $font-color
+          margin-right: 14px
+          text-align: center
+          font-size: 12px
+          color: transparent
 
-    input:checked + label:before
-      color: $first-dop-color
+      input:checked + label:before
+        color: $first-dop-color
 
-    p
-      margin-bottom: $dop-size
+      p
+        margin-bottom: $dop-size
 
-    button
-      @extend %for_button
-      display: block
-      padding: 0 30px
-      line-height: 40px
+      button
+        @extend %for_button
+        display: block
+        padding: 0 30px
+        line-height: 40px
+
+//#gray_bg
+//  background-color: rgba(0,0,0,.5)
+//  position: fixed
+//  z-index: 4
+//  top: 0
+//  left: 0
+//  width: 100%
+//  height: 100%
+//  //bottom: 0
+//  //right: 0
+//  overflow: auto
+//  display: none
 
 
 

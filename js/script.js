@@ -20,4 +20,16 @@ $(document).ready(function(){
 });
 
 
+/*basket page*/
 
+var basket = document.getElementById('basket');
+var  open_basket = document.getElementById("open_basket");
+var close = document.getElementsByClassName("close")[0];
+
+open_basket.onclick = function () {
+    basket.style.display = "block";
+}
+
+close.onclick = function () {
+    basket.style.display = "none";
+}

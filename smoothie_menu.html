@@ -15,21 +15,7 @@
     <link rel="stylesheet" href="https://resources/demos/style.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script>
-        $(function () {
-            $("#tabs").tabs();
-        });
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-            crossorigin="anonymous"></script>
-    <script src="js/wow.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
-    <script src="bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+
 </head>
 <body>
 <header>
@@ -73,7 +59,7 @@
         </div>
     </nav>
 </header>
-<section class="program_description">
+<section class="program_description" id="program_description">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -118,13 +104,13 @@
         <div class="program_information">
             <h3 class="wow slideInLeft">Програма “Смузі меню” для тих, хто хоче розвантажити свій організм</h3>
             <p class="wow slideInRight">Калорійність: 1200 ккал</p>
-            <p class="wow slideInLeft">Підходить для тих, хто:</p>
+            <p class="wow slideInLeft">Підходить для тих, хто бажає:</p>
             <ul>
                 <li class="wow slideInRight">
                     <span>розвантажити свій організм</span>
                 </li>
                 <li class="wow slideInLeft">
-                    <span >вивести шлаки та токсичні речовини з організму</span>
+                    <span>вивести шлаки та токсичні речовини з організму</span>
                 </li>
                 <li class="wow slideInRight">
                     <span>покращити самопочуття та метаболізм</span>
@@ -152,7 +138,7 @@
                                     <h5>СНІДАНОК</h5>
                                     <p>7:00 - 9:00</p>
                                 </div>
-                                <p class="recipe">Яблуко, петрушка, селера, авокадо  на медовій воді</p>
+                                <p class="recipe">Яблуко, петрушка, селера, авокадо на медовій воді</p>
                                 <div class="time d-flex justify-content-between">
                                     <h5>ДРУГИЙ СНІДАНОК</h5>
                                     <p>9:30 - 11:00</p>
@@ -180,10 +166,63 @@
             </div>
         </div>
     </div>
-    <div class="basket_programs">
-        <a href="basket.html"></a>
+    <div class="open_basket" id="open_basket">
+        <a href="#"></a>
     </div>
 </section>
+<section class="basket wow slideInRight" id="basket">
+    <div class="basket_content float-right" id="basket_content">
+        <div class="close float-left" id="close">
+            <a href="#"></a>
+        </div>
+        <h3>Кошик</h3>
+        <div class="basket_description d-md-flex justify-content-md-between">
+            <div>
+                <img src="images/Basket_1_07.jpg" alt="food">
+            </div>
+            <div>
+                <p>Експрес схуднення для чоловіків</p>
+                <p>1600-1800 ккал</p>
+                <div class="d-flex justify-content-around">
+                    <div class="count">
+                        <span>-</span>
+                        <span>1</span>
+                        <span>+</span>
+                    </div>
+                    <span>4 410 грн</span>
+                    <a href="#"></a>
+                </div>
+            </div>
+        </div>
+        <div class="basket_description d-md-flex  justify-content-md-between">
+            <div>
+                <img src="images/Basket_2_07.jpg" alt="food">
+            </div>
+            <div>
+                <p>Bегетарианське меню для жінок</p>
+                <p>1300-1600 ккал</p>
+                <div class="d-flex justify-content-around">
+                    <div class="count">
+                        <span>-</span>
+                        <span>1</span>
+                        <span>+</span>
+                    </div>
+                    <span>1 620 грн</span>
+                    <a href="#"></a>
+                </div>
+            </div>
+        </div>
+        <form action="" method="post">
+            <input type="checkbox" class="checkbox" id="checkbox" value="submit_customer_card">
+            <label for="checkbox">Я підтверджую наявність картки постійного клієнта</label>
+            <div class="float-right">
+                <p class="">Всього: 6 030 грн</p>
+                <button type="submit" class="">ЗАМОВИТИ</button>
+            </div>
+        </form>
+    </div>
+</section>
+
 <footer>
     <div class="container">
         <div class="d-lg-flex wow slideInUp">
@@ -225,5 +264,23 @@
         <a href="#"></a>
     </div>
 </section>
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+    $(function () {
+        $("#tabs").tabs();
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+<script src="js/script.js"></script>
+<script src="bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
 </body>
 </html>
