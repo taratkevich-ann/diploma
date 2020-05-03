@@ -61,6 +61,56 @@
   100% {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1); } }
+.transition-loader-inner label:nth-child(1) {
+  -webkit-animation: loader 3s 600ms infinite ease-in-out;
+  animation: loader 3s 600ms infinite ease-in-out; }
+
+.transition-loader-inner label:nth-child(2) {
+  -webkit-animation: loader 3s 500ms infinite ease-in-out;
+  animation: loader 3s 500ms infinite ease-in-out; }
+
+.transition-loader-inner label:nth-child(3) {
+  -webkit-animation: loader 3s 400ms infinite ease-in-out;
+  animation: loader 3s 400ms infinite ease-in-out; }
+
+.transition-loader-inner label:nth-child(4) {
+  -webkit-animation: loader 3s 300ms infinite ease-in-out;
+  animation: loader 3s 300ms infinite ease-in-out; }
+
+.transition-loader-inner label:nth-child(5) {
+  -webkit-animation: loader 3s 200ms infinite ease-in-out;
+  animation: loader 3s 200ms infinite ease-in-out; }
+
+.transition-loader-inner label:nth-child(6) {
+  -webkit-animation: loader 3s 100ms infinite ease-in-out;
+  animation: loader 3s 100ms infinite ease-in-out; }
+
+@keyframes loader {
+  0% {
+    opacity: 0;
+    transform: translateX(-300px) scale(1); }
+  33% {
+    opacity: 1;
+    transform: translateX(0px) scale(2); }
+  66% {
+    opacity: 1;
+    transform: translateX(0px) scale(1); }
+  100% {
+    opacity: 0;
+    transform: translateX(300px) scale(2); } }
+@-webkit-keyframes loader {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-300px); }
+  33% {
+    opacity: 1;
+    -webkit-transform: translateX(0px); }
+  66% {
+    opacity: 1;
+    -webkit-transform: translateX(0px); }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(300px); } }
 * {
   padding: 0;
   margin: 0; }
@@ -89,6 +139,34 @@ p {
   font-family: "Montserrat", sans-serif;
   color: #2b2c2c;
   margin-bottom: 0; }
+
+.transition-loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  background-color: #fff; }
+  .transition-loader .transition-loader-inner {
+    transform: translateY(-50%);
+    top: 50%;
+    position: absolute;
+    width: calc(100% - 50px);
+    margin: auto;
+    color: #43d283;
+    padding: 0 100px;
+    text-align: center; }
+    .transition-loader .transition-loader-inner label {
+      font-size: 1em;
+      padding: 1%;
+      opacity: 0;
+      display: inline-block; }
+      .transition-loader .transition-loader-inner label:after {
+        content: "";
+        display: block;
+        font-family: Font Awesome\ 5 Free;
+        font-weight: 900; }
 
 .navbar {
   padding: 0 4.25rem;
@@ -419,8 +497,9 @@ p {
 .orders .btn-primary:not(:disabled):not(.disabled).active, .orders .btn-primary:not(:disabled):not(.disabled):active, .orders .show > .btn-primary.dropdown-toggle {
   color: #fff;
   border: 0 !important;
-  background-color: #43d283 !important;
-  outline: 0; }
+  background-color: #43d283 !important; }
+  .orders .btn-primary:not(:disabled):not(.disabled).active:focus, .orders .btn-primary:not(:disabled):not(.disabled):active:focus, .orders .show > .btn-primary.dropdown-toggle:focus {
+    outline: none; }
 .orders .dropdown-toggle {
   position: relative; }
   .orders .dropdown-toggle:after {
@@ -619,29 +698,11 @@ p {
   @media screen and (max-width: 768px) {
     .comments .txt_carousel h5 {
       font-size: 1.1rem; } }
-.comments .txt_carousel .marks {
-  display: inline-block; }
-  .comments .txt_carousel .marks a {
-    text-decoration: none;
-    transition: all 1s ease-in-out 0s; }
-    .comments .txt_carousel .marks a:before {
-      content: "";
-      display: inline-block;
-      font-family: Font Awesome\ 5 Free;
-      font-weight: 900;
-      color: #e4e4e4;
-      font-size: 0.75rem; }
-      @media screen and (max-width: 768px) {
-        .comments .txt_carousel .marks a:before {
-          font-size: 0.6rem; } }
-    .comments .txt_carousel .marks a:hover:before {
-      color: #ff9649;
-      transition: all 500ms ease-in-out 0s; }
 .comments .txt_carousel p {
   margin-bottom: 3.125rem; }
-  .comments .txt_carousel p:nth-child(odd) {
-    color: #ff9649;
-    margin-bottom: 1.438rem; }
+.comments .txt_carousel p.font-italic {
+  color: #ff9649;
+  margin-bottom: 1.438rem; }
 
 footer {
   background-color: #e4e4e4;

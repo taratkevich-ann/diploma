@@ -1,3 +1,9 @@
+/*preloader*/
+window.onload = function(){
+    let preloader = document.getElementById('preloader');
+    preloader.style.display = 'none'
+};
+
 
 $(document).ready(function(){
 
@@ -33,21 +39,6 @@ open_basket.onclick = function () {
 close.onclick = function () {
     basket.style.display = "none";
 };
-
-/*anchors*/
-
-const anchors = document.querySelectorAll('a[href*="#"]');
-
-for (let anchor of anchors){
-    anchor.addEventListener("click", function (event) {
-        event.preventDefault();
-        const blockID = anchor.getAttribute('href');
-        document.querySelector('' + blockID).scrollIntoView({
-            behavior: "smooth",
-            block: "start"
-        })
-    })
-}
 
 
 

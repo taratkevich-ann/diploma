@@ -29,7 +29,6 @@ $third-dop-color: #e4e4e4
     background-color: $second-dop-color
     transition: all 1s ease-in-out
 
-
 %for_h2
   font-family: $dop-font
   text-transform: inherit
@@ -69,7 +68,6 @@ $third-dop-color: #e4e4e4
   font-weight: 600
   text-transform: uppercase
 
-
 @keyframes pulse
   0%
     -webkit-transform: scale3d(1, 1, 1)
@@ -82,6 +80,48 @@ $third-dop-color: #e4e4e4
   100%
     -webkit-transform: scale3d(1, 1, 1)
     transform: scale3d(1, 1, 1)
+
+$key-frames-ms: 600ms, 500ms, 400ms, 300ms, 200ms, 100ms
+
+@each $current-ms in $key-frames-ms
+  $i: index($key-frames-ms, $current-ms)
+  .transition-loader-inner label:nth-child(#{$i})
+    -webkit-animation: loader 3s $current-ms infinite ease-in-out
+    animation: loader 3s $current-ms infinite ease-in-out
+
+@keyframes loader
+  0%
+    opacity: 0
+    transform: translateX(-300px) scale(1)
+
+  33%
+    opacity: 1
+    transform: translateX(0px) scale(2)
+
+  66%
+    opacity: 1
+    transform: translateX(0px) scale(1)
+
+  100%
+    opacity: 0
+    transform: translateX(300px) scale(2)
+
+@-webkit-keyframes loader
+  0%
+    opacity: 0
+    -webkit-transform: translateX(-300px)
+
+  33%
+    opacity: 1
+    -webkit-transform: translateX(0px)
+
+  66%
+    opacity: 1
+    -webkit-transform: translateX(0px)
+
+  100%
+    opacity: 0
+    -webkit-transform: translateX(300px)
 
 *
   padding: 0
@@ -111,6 +151,34 @@ p
   font-family: $main-font
   color: $font-color
   margin-bottom: 0
+
+.transition-loader
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 10
+  height: 100%
+  width: 100%
+  background-color: #fff
+  .transition-loader-inner
+    transform: translateY(-50%)
+    top: 50%
+    position: absolute
+    width: calc(100% - 50px)
+    margin: auto
+    color: $first-dop-color
+    padding: 0 100px
+    text-align: center
+    label
+      font-size: 1em
+      padding: 1%
+      opacity: 0
+      display: inline-block
+      &:after
+        content: '\f111'
+        display: block
+        font-family: Font Awesome\ 5 Free
+        font-weight: 900
 
 .navbar
   padding: 0 4.25rem
@@ -494,7 +562,8 @@ p
     color: #fff
     border: 0 !important
     background-color: $first-dop-color !important
-    outline: 0
+    &:focus
+      outline: none
 
   .dropdown-toggle
     position: relative
@@ -519,6 +588,7 @@ p
     padding: 0 1.375rem
     line-height: 3.125rem
     transition: all 1s ease-in-out 0s
+
 
   .dropdown-menu.show
     width: 100%
@@ -720,33 +790,45 @@ p
       @include max-screen(768px)
         font-size: 1.1rem
 
-    .marks
-      display: inline-block
+    //.marks
+    //  display: inline-block
+    //
+    //
+    //  span
+    //    transition: all 1s ease-in-out 0s
+    //
+    //
+    //    &:before
+    //      content: "\f005"
+    //      display: inline-block
+    //      font-family: Font Awesome\ 5 Free
+    //      font-weight: 900
+    //      color: $third-dop-color
+    //      font-size: 12px
+    //      position: relative
+    //      left: 0
+    //      width: 12px
+    //
+    //      @include max-screen(768px)
+    //        font-size: 0.6rem
+    //
+    //    &:hover:before
+    //      color: $second-dop-color
+    //      transition: all 500ms ease-in-out 0s
+    //      cursor: pointer
 
-      a
-        text-decoration: none
-        transition: all 1s ease-in-out 0s
 
-        &:before
-          content: "\f005"
-          display: inline-block
-          font-family: Font Awesome\ 5 Free
-          font-weight: 900
-          color: $third-dop-color
-          font-size: 0.75rem
-          @include max-screen(768px)
-            font-size: 0.6rem
-
-        &:hover:before
-          color: $second-dop-color
-          transition: all 500ms ease-in-out 0s
 
     p
       margin-bottom: 3.125rem
 
-      &:nth-child(odd)
-        color: $second-dop-color
-        margin-bottom: 1.438rem
+    p.font-italic
+      color: $second-dop-color
+      margin-bottom: 1.438rem
+
+      //&:first-of-type
+      //  color: $second-dop-color
+      //  margin-bottom: 1.438rem
 
 footer
   background-color: $third-dop-color

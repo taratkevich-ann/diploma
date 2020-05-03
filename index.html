@@ -17,6 +17,16 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div class="transition-loader" id="preloader">
+    <div class="transition-loader-inner">
+        <label></label>
+        <label></label>
+        <label></label>
+        <label></label>
+        <label></label>
+        <label></label>
+    </div>
+</div>
 <header>
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
@@ -249,7 +259,7 @@
                     Ми зв’яжемося з вами протягом дня або на наступний, якщо Ви звернулися пізніше.
                     Також Ви можете отримати консультацію щодо програм у нашого дієтолога.</p>
                 <a href="#" class="wow slideInLeft">подзвонити</a>
-                <a href="#" class="wow slideInRight">ЗАМОВИТИ</a>
+                <a href="#programs" class="wow slideInRight">ЗАМОВИТИ</a>
             </div>
         </div>
     </div>
@@ -338,7 +348,7 @@
                 </div>
                 <div class="right_part wow slideInRight">
                     <p>Стань постійним клієнтом HealthyFood</p>
-                    <a href="#">Дізнатися більше</a>
+                    <a href="stock_customer.html" target="_blank">Дізнатися більше</a>
                 </div>
             </div>
             <div class="common_block_stock col-md-10 offset-md-1 d-flex align-items-center">
@@ -348,7 +358,7 @@
                 </div>
                 <div class="right_part wow slideInRight">
                     <p>Замовляй доставку на 2х та отримай знижку</p>
-                    <a href="#">Дізнатися більше</a>
+                    <a href="stock_2_orders.html" target="_blank">Дізнатися більше</a>
                 </div>
             </div>
             <div class="common_block_stock col-md-10 offset-md-1  d-flex align-items-center">
@@ -358,7 +368,7 @@
                 </div>
                 <div class="right_part wow slideInRight">
                     <p>Запрошуй друзів та отримуй знижку на доставку </p>
-                    <a href="#">Дізнатися більше</a>
+                    <a href="stock_100hrn_for_friend.html" target="_blank">Дізнатися більше</a>
                 </div>
             </div>
             <div class="common_block_stock col-md-10 offset-md-1  d-flex align-items-center">
@@ -368,7 +378,7 @@
                 </div>
                 <div class="right_part wow slideInRight">
                     <p>Отримай 100 грн бонусів за кожен скинутий кілограм </p>
-                    <a href="#">Дізнатися більше</a>
+                    <a href="stock_100hrn.html" target="_blank">Дізнатися більше</a>
                 </div>
             </div>
         </div>
@@ -387,15 +397,10 @@
                                     <img src="images/comment_1_09.jpg" alt="staff">
                                 </div>
                                 <div class="txt_carousel wow slideInRight">
-                                    <h5>Євген Будько</h5>
-                                    <div class="marks float-right">
-                                        <a href="#"></a>
-                                        <a href="#"></a>
-                                        <a href="#"></a>
-                                        <a href="#"></a>
-                                        <a href="#"></a>
+                                    <div class="d-flex justify-content-between">
+                                        <h5>Євген Будько</h5>
+                                        <p class="font-italic">Блогер</p>
                                     </div>
-                                    <p class="font-italic">Блогер</p>
                                     <p>За 2 тижні мінус 4кг. Рекомендую поєднувати з якимось спортом, у моєму випадку -
                                         це
                                         був бокс. Щодо якості та смаку їжі, то жодних претензій. Персонал завжи готовий
@@ -408,15 +413,10 @@
                                     <img src="images/comment_2_11.jpg" alt="staff">
                                 </div>
                                 <div class="txt_carousel wow slideInRight">
-                                    <h5>Ганна Пліс</h5>
-                                    <div class="marks float-right">
-                                        <a href="#"></a>
-                                        <a href="#"></a>
-                                        <a href="#"></a>
-                                        <a href="#"></a>
-                                        <a href="#"></a>
+                                    <div class="d-flex justify-content-between">
+                                        <h5>Ганна Пліс</h5>
+                                        <p class="font-italic">Модель</p>
                                     </div>
-                                    <p class="font-italic">Модель</p>
                                     <p>Мені, як професіональній моделі, необхіднопідтримувати гарну форму. Але я ніколи
                                         не
                                         була прихильницею правильного харчування. Але все змінилося, коли я спробувала
@@ -429,15 +429,10 @@
                                     <img src="images/comment_3_10.jpg" alt="staff">
                                 </div>
                                 <div class="txt_carousel wow slideInRight">
-                                    <h5>Катя Вілкова</h5>
-                                    <div class="marks float-right">
-                                        <a href="#"></a>
-                                        <a href="#"></a>
-                                        <a href="#"></a>
-                                        <a href="#"></a>
-                                        <a href="#"></a>
+                                    <div class="d-flex justify-content-between">
+                                        <h5>Катя Вілкова</h5>
+                                        <p class="font-italic">Фітнес-тренер</p>
                                     </div>
-                                    <p class="font-italic">Фітнес-тренер</p>
                                     <p>Коли ти майже весь свій час проводиш у спротивній залі, то часу на приготування
                                         їжі
                                         зовсім не залишається. Та бажання також. Але смакувати крисну та смачну їжу все
@@ -458,15 +453,10 @@
                                     <img src="images/comment_4_13.jpg" alt="staff">
                                 </div>
                                 <div class="txt_carousel wow slideInRight">
-                                    <h5>Артур Кондрат</h5>
-                                    <div class="marks float-right">
-                                        <a href="#"></a>
-                                        <a href="#"></a>
-                                        <a href="#"></a>
-                                        <a href="#"></a>
-                                        <a href="#"></a>
+                                    <div class="d-flex justify-content-between">
+                                        <h5>Артур Кондрат</h5>
+                                        <p class="font-italic">Професійний боксер</p>
                                     </div>
-                                    <p class="font-italic">Професійний боксер</p>
                                     <p>Мені завжди треба мати та підтримувати
                                         гарну форму для того, щоб вигравати
                                         бої. І я дуже радий, що знайшов компанію,
@@ -481,15 +471,10 @@
                                     <img src="images/comment_5_15.jpg" alt="staff">
                                 </div>
                                 <div class="txt_carousel wow slideInRight">
-                                    <h5>Марія Чув</h5>
-                                    <div class="marks float-right">
-                                        <a href="#"></a>
-                                        <a href="#"></a>
-                                        <a href="#"></a>
-                                        <a href="#"></a>
-                                        <a href="#"></a>
+                                    <div class="d-flex justify-content-between">
+                                        <h5>Марія Чув</h5>
+                                        <p class="font-italic">Телеведуча</p>
                                     </div>
-                                    <p class="font-italic">Телеведуча</p>
                                     <p>Коли ти постійно на зйомках та часу на
                                         нормальну їжу не вистачає, а обмежувати
                                         себе шкідливими перекусами не хочеш,
@@ -503,15 +488,10 @@
                                     <img src="images/comment_6_18.jpg" alt="staff">
                                 </div>
                                 <div class="txt_carousel wow slideInRight">
-                                    <h5>Христина Малаєва</h5>
-                                    <div class="marks float-right">
-                                        <a href="#"></a>
-                                        <a href="#"></a>
-                                        <a href="#"></a>
-                                        <a href="#"></a>
-                                        <a href="#"></a>
+                                    <div class="d-flex justify-content-between">
+                                        <h5>Христина Малаєва</h5>
+                                        <p class="font-italic">Студентка</p>
                                     </div>
-                                    <p class="font-italic">Студентка</p>
                                     <p>Дуже давно хотіла спробувати обежити
                                         себе у вживанні шкідливої їжі. Але на
                                         жаль, я нічого не знала про здорове
@@ -532,15 +512,10 @@
                                     <img src="images/comment_7_14.jpg" alt="staff">
                                 </div>
                                 <div class="txt_carousel wow slideInRight">
-                                    <h5>Анатолій Кімчук</h5>
-                                    <div class="marks float-right">
-                                        <a href="#"></a>
-                                        <a href="#"></a>
-                                        <a href="#"></a>
-                                        <a href="#"></a>
-                                        <a href="#"></a>
+                                    <div class="d-flex justify-content-between">
+                                        <h5>Анатолій Кімчук</h5>
+                                        <p class="font-italic">Блогер</p>
                                     </div>
-                                    <p class="font-italic">Блогер</p>
                                     <p>Вирішив спробувати: як це - правильно
                                         харчуватися. Їжа у вас смачна, але я
                                         зрозумів, що я взагалі не прихильник
@@ -552,15 +527,10 @@
                                     <img src="images/comment_8_17.jpg" alt="staff">
                                 </div>
                                 <div class="txt_carousel wow slideInRight">
-                                    <h5>Лариса Гулькова</h5>
-                                    <div class="marks float-right">
-                                        <a href="#"></a>
-                                        <a href="#"></a>
-                                        <a href="#"></a>
-                                        <a href="#"></a>
-                                        <a href="#"></a>
+                                    <div class="d-flex justify-content-between">
+                                        <h5>Лариса Гулькова</h5>
+                                        <p class="font-italic">Бізнес-леді</p>
                                     </div>
-                                    <p class="font-italic">Бізнес-леді</p>
                                     <p>Ніколи не розуміла цей культ на здорове
                                         харчування, але вирішила спробувати.
                                         Але скуштувавши ваші страви, я зрозуміла,
@@ -573,15 +543,10 @@
                                     <img src="images/comment_9_10.jpg" alt="staff">
                                 </div>
                                 <div class="txt_carousel wow slideInRight">
-                                    <h5>Яна Булигіна</h5>
-                                    <div class="marks float-right">
-                                        <a href="#"></a>
-                                        <a href="#"></a>
-                                        <a href="#"></a>
-                                        <a href="#"></a>
-                                        <a href="#"></a>
+                                    <div class="d-flex justify-content-between">
+                                        <h5>Яна Булигіна</h5>
+                                        <p class="font-italic">Программіст</p>
                                     </div>
-                                    <p class="font-italic">Программіст</p>
                                     <p>Коли ведеш не дуже рухомий спосіб
                                         життя , то єдиним способом залишатися
                                         в гарній формі - корисне харчування.
@@ -643,7 +608,6 @@
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
         crossorigin="anonymous"></script>
 <script src="js/owl.carousel.min.js"></script>
-<script src="js/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
@@ -651,7 +615,7 @@
 <script>
     new WOW().init();
 </script>
-<script src="js/script.js"></script>
 <script src="bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
