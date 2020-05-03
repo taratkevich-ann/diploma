@@ -147,14 +147,14 @@ p {
   z-index: 10;
   height: 100%;
   width: 100%;
-  background-color: #fff; }
+  background-color: #43d283; }
   .transition-loader .transition-loader-inner {
     transform: translateY(-50%);
     top: 50%;
     position: absolute;
     width: calc(100% - 50px);
     margin: auto;
-    color: #43d283;
+    color: #fff;
     padding: 0 100px;
     text-align: center; }
     .transition-loader .transition-loader-inner label {
