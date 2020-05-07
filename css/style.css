@@ -1117,7 +1117,7 @@ footer {
     width: 50%;
     min-height: 100vh;
     background-color: #fff;
-    padding: 3.75rem 5.625 0 8.125rem; }
+    padding: 3.75rem 5.625rem 0 8.125rem; }
     @media screen and (max-width: 1024px) {
       .basket .basket_content {
         width: 75%; } }
@@ -1214,4 +1214,4 @@ footer {
       padding: 0 1.875rem;
       line-height: 2.5rem; }
 
-/*# sourceMappingURL=style.css.map */
+
