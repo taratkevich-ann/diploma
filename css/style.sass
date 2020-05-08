@@ -221,6 +221,8 @@ p
       padding-left: .2rem
       padding-right: .2rem
       font-size: .875rem
+    &:hover
+      color: $second-dop-color
 
     &:hover:after
       content: ''
@@ -646,6 +648,39 @@ p
       @include max-screen(414px)
         width: 100%
         margin-bottom: 6.25rem
+
+
+.form_is_sent
+  background-color: #fff
+  position: fixed
+  z-index: 4
+  top: 0
+  width: 30%
+  min-height: 150px
+  overflow: auto
+  padding: $dop-size
+  border: 1.3px solid $third-dop-color
+  border-top: 0
+  display: none
+  h5
+    margin-bottom: 10px
+    font-family: $main-font
+    color: $font-color
+    font-size: 18px
+  p
+    margin-bottom: 20px
+
+  a
+    text-decoration: none
+    @extend %for_button
+    display: block
+    line-height: 28px
+    width: 100%
+    text-align: center
+
+
+
+
 
 .stock
   margin-bottom: 4.375rem

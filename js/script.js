@@ -42,3 +42,15 @@ close.onclick = function () {
 
 
 
+/*you form is sent*/
+var orders_but = document.getElementById('orders_but');
+var form_is_sent = document.getElementById("form_is_sent");
+var ok = document.getElementsByClassName("ok");
+
+orders_but.onclick = function () {
+    form_is_sent.style.display = "block";
+};
+
+ok.onclick = function () {
+    form_is_sent.style.display = "none";
+};
