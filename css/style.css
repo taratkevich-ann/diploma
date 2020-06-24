@@ -961,7 +961,7 @@ footer {
     position: fixed;
     right: 0;
     top: 40%;
-    z-index: 9;
+    z-index: 3;
     transition: all 500ms ease-in-out; }
     @media screen and (max-width: 414px) {
       .program_description .open_basket a:after {
